@@ -11,9 +11,30 @@ class Header extends Component
      *
      * @return void
      */
-    public function __construct()
+
+    public $lang;
+    public $title;
+    public $description;
+    public $keywords;
+    public $author;
+    public $externalFONT = [];
+    public $externalCSS = [];
+    public $externalJS = [];
+    public $themeClass;
+
+    public function __construct($title = "Welcome", $path = "")
     {
-        //
+        $this->lang = "en";
+        $this->title = $title;
+        $this->description = "";
+        $this->keywords = "Personal Webpage";
+        $this->author = "Agostinho Pina Ramos";
+        $this->externalFONT = [];
+        $this->externalCSS = [];
+        $this->externalJS = [
+            "//maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyBq0itdZJFJ6ZepExv40PhvdP7uryDUOrw"
+        ];
+        $this->themeClass = "white-vertion black-bg";
     }
 
     /**

@@ -11,9 +11,31 @@ class Footer extends Component
      *
      * @return void
      */
-    public function __construct()
+
+    public $internalCSS = [];
+    public $internalJS = [];
+    public $externalCSS = [];
+    public $externalJS = [];
+
+    public $path = null;
+
+    public function __construct($path = '')
     {
-        //
+        $this->path = $path;
+
+        $this->externalCSS = [];
+
+        $this->internalCSS = [
+            file_get_contents(__DIR__ . "/../../../public" . '/css/style.min.css'),
+        ];
+
+        $this->internalJS = [
+            file_get_contents(__DIR__ . "/../../../public" . '/js/bundle.min.js'),
+        ];
+
+        $this->externalJS = [
+            
+        ];
     }
 
     /**
