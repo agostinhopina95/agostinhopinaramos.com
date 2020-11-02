@@ -19,7 +19,7 @@ $login_result = ftp_login($conn_id, $ftp_user_name, $ftp_user_pass);
 if (ftp_put($conn_id, $remote_folder . $file_identity, $file)) {
     echo "successfully uploaded $file_identity\n";
     $method_url =
-        "https://agostinhopinaramos.com/tools/unzip.php?token=8F934UT98HU9IERNUIV78ERUIVNERHUVI" .
+        "https://agostinhopinaramos.com/_tools/unzip.php?token=8F934UT98HU9IERNUIV78ERUIVNERHUVI" .
         "&from=" . $remote_folder . $file_identity . "&to=" . $remote_folder;
     $script = '<script>
         setTimeout(() => {
