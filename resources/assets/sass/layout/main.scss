@@ -78,6 +78,10 @@ button[disabled] {
     -moz-osx-font-smoothing: grayscale;
 }
 
+.fa-play:before {
+    content: "\f04b";
+}
+
 .fa-arrow-right:before {
     content: "\f061";
 }

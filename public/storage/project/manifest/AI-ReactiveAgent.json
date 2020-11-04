@@ -5,6 +5,7 @@
     "/storage/project/source/AI-ReactiveAgent/thumbnail.png",
     "Reactive Agent Image"
   ],
+  "size":"250K",
   "category" : "webapplication",
   "more" : {
     "title" : "Reactive Agent for AI",
@@ -15,6 +16,7 @@
       "CSS"
     ],
     "demo" : "/demo/webapplication/AI-ReactiveAgent/",
+	"download" : "?download",
     "figure" : [
       {
        "img" : "/storage/project/source/AI-ReactiveAgent/demo1.png",

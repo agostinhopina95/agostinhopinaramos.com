@@ -92,7 +92,7 @@ foreach($projects as $project){
                   </ul>
                </div>
                @if(isset($article["more"]["demo"]))
-               <a target="_blank" href="{{ $article["more"]["demo"] }}" class="btn btn-fill">Demo</a>
+               <a target="_blank" href="{{ $article["more"]["demo"] }}" class="btn btn-fill"><i class="fa fa-play" ></i>&nbsp; Demo</a>
                @endif
             </div>
             <div class="col-sm-7">
