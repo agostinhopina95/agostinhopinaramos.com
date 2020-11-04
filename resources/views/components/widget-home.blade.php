@@ -5,7 +5,7 @@
             <div class="col-sm-6">
                <div class="hero-img wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.6s">
                   <div class="profile-img-border">
-                     <img src="/public/img/static/myphoto01.jpg" alt="Agostinho Ramos"  class="main-img-profile">
+                     <img src="/public/img/static/myphoto02.png" alt="Agostinho Ramos"  class="main-img-profile">
                   </div>
                </div>
             </div>

@@ -154,7 +154,7 @@ gulp.task("logotype", function(done){
 });
 
 gulp.task("profile-image", function (done) {
-    return gulp.src('./resources/assets/storage/img/myphoto01.jpg')
+    return gulp.src('./resources/assets/storage/img/myphoto02.jpg')
         .pipe(flatMap((file, cb) => {
             const pngIMG = file.clone()
             pngIMG.scale = {

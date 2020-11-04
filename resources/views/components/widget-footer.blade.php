@@ -51,6 +51,7 @@
                <form id="contactForm" class="single-form quate-form wow fadeInUp" data-toggle="validator" >
                   <div id="msgSubmit" class="h3 hidden"></div>
                   <div class="row">
+                     <input type="hidden" name="_token" id="_token" value="{{ csrf_token() }}">
                      <div class="col-md-6 col-sm-12">
                         <input name="name" class="contact-name form-control" id="name" type="text" placeholder="First Name" required>
                      </div>

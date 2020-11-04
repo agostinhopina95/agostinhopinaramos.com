@@ -26,7 +26,7 @@ class Header extends Component
     {
         $this->lang = "en";
         $this->title = $title;
-        $this->description = "";
+        $this->description = "I am Full Stack Web Developer, and Freelancer.";
         $this->keywords = "Personal Webpage";
         $this->author = "Agostinho Pina Ramos";
         $this->externalFONT = [];

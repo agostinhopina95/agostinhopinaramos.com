@@ -9,6 +9,15 @@
     <meta name="author" content="{{ $author }}">
     <x-Html-Favicon />
     <title>{{ $title }}</title>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DLK0YQS3WW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-DLK0YQS3WW');
+</script>
+<!-- END Global site tag (gtag.js) - Google Analytics -->
 @if(count($externalFONT)>0)
     <!-- Load FONTS -->
 @foreach($externalFONT as $url)

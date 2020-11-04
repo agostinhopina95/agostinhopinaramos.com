@@ -379,10 +379,11 @@
           var name = $("#name").val();
           var email = $("#email").val();
           var message = $("#message").val();
+          var _token = $("#_token").val();
           $.ajax({
               type: "POST",
-              url: "?contact_me_form.php",
-              data: "name=" + name + "&email=" + email + "&message=" + message,
+              url: "/api/contact_me_form",
+              data: "_token=" + _token + "&name=" + name + "&email=" + email + "&message=" + message,
               success : function(text){
                   if (text == "success"){
                       formSuccess();
@@ -391,7 +392,7 @@
                       submitMSG(false,text);
                     }
                 }
-            });
+          });
         }
         function formSuccess(){
             $("#contactForm")[0].reset();

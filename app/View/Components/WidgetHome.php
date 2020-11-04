@@ -12,22 +12,9 @@ class WidgetHome extends Component
      * @return void
      */
     public $social_networks;
-    public function __construct()
+    public function __construct($obj)
     {
-        $this->social_networks = [
-            [
-                "icon" => "fa fa-facebook",
-                "href" => "https://www.facebook.com/agostinhopinaramos/"
-            ],
-            [
-                "icon" => "fa fa-github",
-                "href" => "https://github.com/agostinhopina95/"
-            ],
-            [
-                "icon" => "fa fa-medium",
-                "href" => "https://medium.com/@agostinhopina095"
-            ],
-        ];
+        $this->social_networks = $obj['social_networks'];
     }
 
     /**

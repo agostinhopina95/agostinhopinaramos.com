@@ -1,120 +1,71 @@
+<?php
+$categories = [
+   [
+      "name" => "Website",
+      "id" => "website",
+   ],
+   [
+      "name" => "Mobile",
+      "id" => "mobile",
+   ],
+   [
+      "name" => "Schema",
+      "id" => "schema",
+   ],
+   [
+      "name" => "Web application",
+      "id" => "webapplication",
+   ],
+];
+
+$manifest_directory =  __DIR__ . "/../../../public" . '/storage/project/manifest/';
+$scanned_directory = array_diff(scandir($manifest_directory), array('..', '.'));
+$projects = [];
+foreach($scanned_directory as $file){
+   $projects[] = explode(".json", $file)[0];
+};
+$articles = [];
+foreach($projects as $project){
+   $manifest = file_get_contents( $manifest_directory . $project . '.json' );
+   $articles[] = json_decode($manifest, true);
+}
+
+?>
+
+<?php $id_modal_hide = $id_modal = 0; ?>
 <section class="mh-portfolio" id="mh-portfolio">
    <div class="container">
       <div class="row section-separator">
          <div class="section-title col-sm-12 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.1s">
-            <h3>Recent Portfolio</h3>
+            <h3>My Portfolio</h3>
          </div>
          <div class="part col-sm-12">
             <div class="portfolio-nav col-sm-12" id="filter-button">
                <ul>
                   <li data-filter="*" class="current wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.1s"> <span>All Categories</span></li>
-                  <li data-filter=".user-interface" class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s"><span>Web Design</span></li>
-                  <li data-filter=".branding" class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s"><span>Branding</span></li>
-                  <li data-filter=".mockup" class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.4s"><span>Mockups</span></li>
-                  <li data-filter=".ui" class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.5s"><span>Photography</span></li>
+                  @foreach($categories as $category)
+                  <li data-filter=".{{ $category["id"] }}" class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s"><span>{{ $category["name"] }}</span></li>
+                  @endforeach
                </ul>
             </div>
             <div class="mh-project-gallery col-sm-12 wow fadeInUp" id="project-gallery" data-wow-duration="0.8s" data-wow-delay="0.5s">
                <div class="portfolioContainer row">
-                  <div class="grid-item col-md-4 col-sm-6 col-xs-12 user-interface">
+                  @foreach($articles as $article)
+                  <div class="grid-item col-md-4 col-sm-6 col-xs-12 {{ $article["category"] }}">
                      <figure>
-                        <img src="http://cvresumetemplate.com/maha-personal-cv-resume-html-template/assets/images/portfolio/g1.jpg" alt="img04">
+                        <img src="{{ $article["thumbnail"][0] }}" alt="{{ $article["thumbnail"][1] }}">
                         <figcaption class="fig-caption">
                            <i class="fa fa-search"></i>
-                           <h5 class="title">Creative Design</h5>
-                           <span class="sub-title">Photograpy</span>
-                           <a data-fancybox data-src="#mh"></a>
+                           <h5 class="title">{{ $article["title"] }}</h5>
+                           <span class="sub-title">{{ $article["subtitle"] }}</span>
+                           <a data-fancybox data-src="#modal{{ md5($id_modal) }}"></a>
                         </figcaption>
                      </figure>
                   </div>
-                  <div class="grid-item col-md-4 col-sm-6 col-xs-12 ui mockup">
-                     <figure>
-                        <img src="http://cvresumetemplate.com/maha-personal-cv-resume-html-template/assets/images/portfolio/g2.png" alt="img04">
-                        <figcaption class="fig-caption">
-                           <i class="fa fa-search"></i>
-                           <h5 class="title">Creative Design</h5>
-                           <span class="sub-title">Photograpy</span>
-                           <a href="http://cvresumetemplate.com/maha-personal-cv-resume-html-template/assets/images/portfolio/g2.png" data-fancybox data-src="#mh"></a>
-                        </figcaption>
-                     </figure>
-                  </div>
-                  <div class="grid-item col-md-4 col-sm-6 col-xs-12 user-interface">
-                     <figure>
-                        <img src="http://cvresumetemplate.com/maha-personal-cv-resume-html-template/assets/images/portfolio/g3.png" alt="img04">
-                        <figcaption class="fig-caption">
-                           <i class="fa fa-search"></i>
-                           <h5 class="title">Creative Design</h5>
-                           <span class="sub-title">Photograpy</span>
-                           <a href="http://cvresumetemplate.com/maha-personal-cv-resume-html-template/assets/images/portfolio/g3.png" data-fancybox data-src="#mh"></a>
-                        </figcaption>
-                     </figure>
-                  </div>
-                  <div class="grid-item col-md-4 col-sm-6 col-xs-12 branding">
-                     <figure>
-                        <img src="http://cvresumetemplate.com/maha-personal-cv-resume-html-template/assets/images/portfolio/g5.png" alt="img04">
-                        <figcaption class="fig-caption">
-                           <i class="fa fa-search"></i>
-                           <h5 class="title">Creative Design</h5>
-                           <span class="sub-title">Photograpy</span>
-                           <a href="http://cvresumetemplate.com/maha-personal-cv-resume-html-template/assets/images/portfolio/g5.png" data-fancybox data-src="#mh"></a>
-                        </figcaption>
-                     </figure>
-                  </div>
-                  <div class="grid-item col-md-4 col-sm-6 col-xs-12 user-interface">
-                     <figure>
-                        <img src="http://cvresumetemplate.com/maha-personal-cv-resume-html-template/assets/images/portfolio/g4.png" alt="img04">
-                        <figcaption class="fig-caption">
-                           <i class="fa fa-search"></i>
-                           <h5 class="title">Creative Design</h5>
-                           <span class="sub-title">Photograpy</span>
-                           <a href="http://cvresumetemplate.com/maha-personal-cv-resume-html-template/assets/images/portfolio/g4.png" data-fancybox data-src="#mh"></a>
-                        </figcaption>
-                     </figure>
-                  </div>
-                  <div class="grid-item col-md-4 col-sm-6 col-xs-12 branding">
-                     <figure>
-                        <img src="http://cvresumetemplate.com/maha-personal-cv-resume-html-template/assets/images/portfolio/g6.png" alt="img04">
-                        <figcaption class="fig-caption">
-                           <i class="fa fa-search"></i>
-                           <h5 class="title">Creative Design</h5>
-                           <span class="sub-title">Photograpy</span>
-                           <a href="http://cvresumetemplate.com/maha-personal-cv-resume-html-template/assets/images/portfolio/g6.png" data-fancybox data-src="#mh"></a>
-                        </figcaption>
-                     </figure>
-                  </div>
-                  <div class="grid-item col-md-4 col-sm-6 col-xs-12 branding">
-                     <figure>
-                        <img src="http://cvresumetemplate.com/maha-personal-cv-resume-html-template/assets/images/portfolio/g8.png" alt="img04">
-                        <figcaption class="fig-caption">
-                           <i class="fa fa-search"></i>
-                           <h5 class="title">Creative Design</h5>
-                           <span class="sub-title">Photograpy</span>
-                           <a href="http://cvresumetemplate.com/maha-personal-cv-resume-html-template/assets/images/portfolio/g8.png" data-fancybox data-src="#mh"></a>
-                        </figcaption>
-                     </figure>
-                  </div>
-                  <div class="grid-item col-md-4 col-sm-6 col-xs-12 ui">
-                     <figure>
-                        <img src="http://cvresumetemplate.com/maha-personal-cv-resume-html-template/assets/images/portfolio/g9.png" alt="img04">
-                        <figcaption class="fig-caption">
-                           <i class="fa fa-search"></i>
-                           <h5 class="title">Creative Design</h5>
-                           <span class="sub-title">Photograpy</span>
-                           <a href="http://cvresumetemplate.com/maha-personal-cv-resume-html-template/assets/images/portfolio/g9.png" data-fancybox data-src="#mh"></a>
-                        </figcaption>
-                     </figure>
-                  </div>
-                  <div class="grid-item col-md-4 col-sm-6 col-xs-12 branding">
-                     <figure>
-                        <img src="http://cvresumetemplate.com/maha-personal-cv-resume-html-template/assets/images/portfolio/g7.jpg" alt="img04">
-                        <figcaption class="fig-caption">
-                           <i class="fa fa-search"></i>
-                           <h5 class="title">Creative Design</h5>
-                           <span class="sub-title">Photograpy</span>
-                           <a href="http://cvresumetemplate.com/maha-personal-cv-resume-html-template/assets/images/portfolio/g7.jpg" data-fancybox="gallery"></a>
-                        </figcaption>
-                     </figure>
-                  </div>
+                  <?php
+                  $id_modal++;
+                  ?>
+                  @endforeach
                </div>
                <!-- End: .grid .project-gallery -->
             </div>
@@ -124,43 +75,41 @@
       </div>
       <!-- End: .row -->
    </div>
-   <div class="mh-portfolio-modal" id="mh">
+   @foreach($articles as $article)
+   <div class="mh-portfolio-modal" id="modal{{ md5($id_modal_hide) }}">
       <div class="container">
          <div class="row mh-portfolio-modal-inner">
             <div class="col-sm-5">
-               <h2>Wrap - A campanion plugin</h2>
-               <p>Wrap is a clean and elegant Multipurpose Landing Page Template. 
-                  It will fit perfectly for Startup, Web App or any type of Web Services.
-                  It has 4 background styles with 6 homepage styles. 6 pre-defined color scheme. 
-                  All variations are organized separately so you can use / customize the template very easily.
-               </p>
-               <p>It is a clean and elegant Multipurpose Landing Page Template. 
-                  It will fit perfectly for Startup, Web App or any type of Web Services.
-                  It has 4 background styles with 6 homepage styles. 6 pre-defined color scheme. 
-                  All variations are organized separately so you can use / customize the template very easily.
-               </p>
+               <h2>{{ $article["more"]["title"] }}</h2>
+               <div style="text-align: justify;text-justify: inter-word;" >
+               {!! $article["more"]["description"] !!}
+               </div>
                <div class="mh-about-tag">
                   <ul>
-                     <li><span>php</span></li>
-                     <li><span>html</span></li>
-                     <li><span>css</span></li>
-                     <li><span>php</span></li>
-                     <li><span>wordpress</span></li>
-                     <li><span>React</span></li>
-                     <li><span>Javascript</span></li>
+                     @foreach($article["more"]["tecnology"] as $tecnology)
+                     <li><span>{{ $tecnology }}</span></li>
+                     @endforeach
                   </ul>
                </div>
-               <a href="" class="btn btn-fill">Live Demo</a>
+               @if(isset($article["more"]["demo"]))
+               <a target="_blank" href="{{ $article["more"]["demo"] }}" class="btn btn-fill">Demo</a>
+               @endif
             </div>
             <div class="col-sm-7">
                <div class="mh-portfolio-modal-img">
-                  <img src="http://cvresumetemplate.com/maha-personal-cv-resume-html-template/assets/images/pr-0.jif" alt="" class="img-fluid">
-                  <p>All variations are organized separately so you can use / customize the template very easily.</p>
-                  <img src="http://cvresumetemplate.com/maha-personal-cv-resume-html-template/assets/images/pr-1.jif" alt="" class="img-fluid">
-                  <p>All variations are organized separately so you can use / customize the template very easily.</p>
+                  @foreach($article["more"]["figure"] as $figure)
+                  <div class="tutorial">
+                     <img src="{{ $figure["img"] }}" alt="{{ $article["thumbnail"][1] }}" class="img-fluid">
+                     <p>{{ $figure["description"] }}</p>
+                  </div>
+                  @endforeach
                </div>
             </div>
          </div>
       </div>
    </div>
+   <?php
+   $id_modal_hide++;
+   ?>
+   @endforeach
 </section>

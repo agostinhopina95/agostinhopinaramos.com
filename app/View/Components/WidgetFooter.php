@@ -13,23 +13,10 @@ class WidgetFooter extends Component
      */
     public $copyright;
     public $social_networks;
-    public function __construct()
+    public function __construct($obj)
     {
-        $this->copyright = '<p>All Right Reserved AgostinhoPinaRamos © 2020 by <a href="https://goodshapecode.com/" >Goodshapecode</a></p>';
-        $this->social_networks = [
-            [
-                "icon" => "fa fa-facebook",
-                "href" => "https://www.facebook.com/agostinhopinaramos/"
-            ],
-            [
-                "icon" => "fa fa-github",
-                "href" => "https://github.com/agostinhopina95/"
-            ],
-            [
-                "icon" => "fa fa-medium",
-                "href" => "https://medium.com/@agostinhopina095"
-            ],
-        ];
+        $this->copyright = $obj['copyright'];
+        $this->social_networks = $obj['social_networks'];
     }
 
     /**

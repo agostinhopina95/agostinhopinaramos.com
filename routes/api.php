@@ -17,3 +17,15 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::post('contact_me_form', function(Request $request){
+
+    $_token = $request->input('_token');
+    $name = $request->input('name');
+    $email = $request->input('email');
+    $message = $request->input('message');
+
+    return 'Success message received.';
+
+    return 'Error, please try again!';
+});

@@ -3,9 +3,8 @@
    <div class="container">
       <div class="row">
          <nav class="navbar navbar-expand-lg mh-nav nav-btn">
-            <a class="navbar-brand" href="#">
-               <img src="/img/static/logo.png" alt="" class="img-fluid">
-               <!-- <h2>Maha</h2> -->
+            <a class="navbar-brand" href="/">
+               <img src="/img/static/logo.png" alt="Agostinho Pina Ramos" class="img-fluid">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon icon"></span>
@@ -15,6 +14,7 @@
                   <li class="nav-item active">
                      <a class="nav-link" href="#mh-home">Home</a>
                   </li>
+                  <!--
                   <li class="nav-item">
                      <a class="nav-link" href="#mh-about">About</a>
                   </li>
@@ -24,15 +24,18 @@
                   <li class="nav-item">
                      <a class="nav-link" href="#mh-experience">Experiences</a>
                   </li>
+                  -->
                   <li class="nav-item">
                      <a class="nav-link" href="#mh-portfolio">Portfolio</a>
                   </li>
+                  <!--
                   <li class="nav-item">
                      <a class="nav-link" href="#mh-pricing">Pricing</a>
                   </li>
                   <li class="nav-item">
                      <a class="nav-link" href="#mh-blog">Blog</a>
                   </li>
+                  -->
                   <li class="nav-item">
                      <a class="nav-link" href="#mh-contact">Contact</a>
                   </li>
