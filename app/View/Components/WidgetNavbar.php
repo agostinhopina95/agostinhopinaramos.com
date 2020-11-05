@@ -11,9 +11,10 @@ class WidgetNavbar extends Component
      *
      * @return void
      */
-    public function __construct()
+    public $menu;
+    public function __construct($menu = True)
     {
-        //
+        $this->menu = $menu;
     }
 
     /**
