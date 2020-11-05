@@ -19,13 +19,13 @@
                   <li class="nav-item">
                      <a class="nav-link" href="#mh-about">About</a>
                   </li>
+                  -->
                   <li class="nav-item">
                      <a class="nav-link" href="#mh-skills">Skills</a>
                   </li>
                   <li class="nav-item">
                      <a class="nav-link" href="#mh-experience">Experiences</a>
                   </li>
-                  -->
                   <li class="nav-item">
                      <a class="nav-link" href="#mh-portfolio">Portfolio</a>
                   </li>

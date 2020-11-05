@@ -2,6 +2,7 @@
 
 namespace App\View\Components;
 
+use Illuminate\Http\Request;
 use Illuminate\View\Component;
 
 class Footer extends Component
@@ -19,11 +20,13 @@ class Footer extends Component
 
     public $path = null;
 
-    public function __construct($path = '')
+    public function __construct(Request $request, $path = '')
     {
         $this->path = $path;
 
-        $this->externalCSS = [];
+        $this->externalCSS = [
+            //return_path($request->path()) . '/css/style.min.css'
+        ];
 
         $this->internalCSS = [
             file_get_contents(__DIR__ . "/../../../public" . '/css/style.min.css'),
@@ -33,8 +36,8 @@ class Footer extends Component
             file_get_contents(__DIR__ . "/../../../public" . '/js/bundle.min.js'),
         ];
 
-        $this->externalJS = [
-            
+        $this->externalJS = [ 
+            //return_path($request->path()) . '/js/example.js'
         ];
     }
 

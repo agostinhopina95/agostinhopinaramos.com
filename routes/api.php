@@ -25,7 +25,16 @@ Route::post('contact_me_form', function(Request $request){
     $email = $request->input('email');
     $message = $request->input('message');
 
-    return 'Success message received.';
+    $object = [
+        "_token" => $_token,
+        "name" => $name,
+        "email" => $email,
+        "message" => $message,
+    ];
+
+    if(send_email($object)){
+        return 'Message send success!';
+    }
 
     return 'Error, please try again!';
 });

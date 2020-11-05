@@ -11,9 +11,10 @@ class WidgetExperiences extends Component
      *
      * @return void
      */
-    public function __construct()
+    public $obj;
+    public function __construct($obj)
     {
-        //
+        $this->obj = $obj;
     }
 
     /**

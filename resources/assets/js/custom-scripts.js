@@ -355,8 +355,6 @@
           });
         });
         
-        
-        
     /*
     |=================
     | CONTACT FORM
@@ -377,13 +375,14 @@
     
         function submitForm(){
           var name = $("#name").val();
+          var last_name = $("#L_name").val();
           var email = $("#email").val();
           var message = $("#message").val();
           var _token = $("#_token").val();
           $.ajax({
               type: "POST",
               url: "/api/contact_me_form",
-              data: "_token=" + _token + "&name=" + name + "&email=" + email + "&message=" + message,
+              data: "_token=" + _token + "&name=" + (name+" "+last_name) + "&email=" + email + "&message=" + message,
               success : function(text){
                   if (text == "success"){
                       formSuccess();
@@ -411,7 +410,4 @@
           }
           $("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
         }
-    
-
-    
 }(jQuery));
