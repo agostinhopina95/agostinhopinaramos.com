@@ -19,9 +19,9 @@ $obj = [
         "last_update" => "05/11/2020 10:48",
         "technical" => [
             [
-                "name" => "HTML/CSS3",
-                "year" => 4.5,
-                "point" => 4
+                "name" => "C#/ASP.NET",
+                "year" => 2.5,
+                "point" => 3
             ],
             [
                 "name" => "JavaScript",
@@ -44,16 +44,6 @@ $obj = [
                 "point" => 3
             ],
             [
-                "name" => "Kotlin",
-                "year" => 0,
-                "point" => 1
-            ],
-            [
-                "name" => "C#/ASP.NET",
-                "year" => 2.5,
-                "point" => 3
-            ],
-            [
                 "name" => "C/C++",
                 "year" => 3,
                 "point" => 2.5
@@ -62,7 +52,7 @@ $obj = [
         "professional" => [
             [
                 "name" => "Communication",
-                "point" => 2.5,
+                "point" => 4.6,
             ],
             [
                 "name" => "Team Work",
@@ -70,7 +60,7 @@ $obj = [
             ],
             [
                 "name" => "Project Management",
-                "point" => 2.25,
+                "point" => 4.25,
             ],
             [
                 "name" => "Creativity",
@@ -157,7 +147,7 @@ $obj = [
             --btn-vertical-padding: 15px;
             width: 100%;
             height: var(--wrap-box-height);
-            background-color:var(--primary-color);
+            background-color: rgba(255, 121, 71, .4);
             opacity: .8;
             text-align: center;
         }
@@ -169,8 +159,8 @@ $obj = [
             animation-name: fadeInUp;
             background-color: var(--primary-color);
             color:#FFF;
-            -webkit-box-shadow: -1px 2px 10px 1px rgba(255, 255, 255, .4); 
-            box-shadow: -1px 2px 10px 1px rgba(255, 255, 255, .4);
+            -webkit-box-shadow: -1px 0px 10px 1px rgba(255, 255, 255, .4); 
+            box-shadow: -1px 0px 10px 1px rgba(255, 255, 255, .4);
             margin-top: calc( (var(--wrap-box-height) / 2) - ((var(--btn-vertical-padding) - 2.5px) * 2) );
         }
 
