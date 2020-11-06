@@ -1589,7 +1589,7 @@ h5 {
 .white-vertion .mh-header .navbar-nav li.active a {
     padding-right: 0;
     padding-left: 0;
-    border-color: #000;
+    border-color: var(--primary-color);
 }
 
 .white-vertion .mh-footer .form-control {
@@ -1930,7 +1930,7 @@ h5 {
 }
 
 .mh-progress path:nth-child(1) {
-    stroke: rgba(0, 0, 0, 0.7);
+    stroke: rgba(0, 0, 0, 0.1);
 }
 
 .mh-progress path:nth-child(2) {
@@ -1975,7 +1975,7 @@ h5 {
     height: 7px;
     margin: 30px 0 2px;
     border-radius: 10px;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.1);
 }
 
 .candidatos .parcial .percentagem {

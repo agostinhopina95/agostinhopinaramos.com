@@ -112,7 +112,7 @@ $obj = [
             [
                 "name" => "Microsegur",
                 "area" => "Developer",
-                "interval" => "02/12/2020 – Current",
+                "interval" => "16/11/2020 – Current",
                 "responsibility" => [
                     "IoT – Internet of Things",
                 ],
@@ -142,6 +142,43 @@ $obj = [
     <x-Widget-Skills :obj=$obj />
 
     <x-Widget-Experiences :obj=$obj />
+
+    <section class="wrap-cv" >
+        <div class="container">
+            <a target="_blank" href="/storage/file/cv/AGOSTINHO_RAMOS.PDF" class="btn btn-fill wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.4s" download>
+                Downlaod CV <i class="fa fa-download"></i>
+            </a>
+        </div>
+    </section>
+
+    <style>
+        .wrap-cv{
+            --wrap-box-height: 220px;
+            --btn-vertical-padding: 15px;
+            width: 100%;
+            height: var(--wrap-box-height);
+            background-color:var(--primary-color);
+            opacity: .8;
+            text-align: center;
+        }
+        .wrap-cv .container a{
+            padding: var(--btn-vertical-padding) 50px;
+            visibility: visible; 
+            animation-duration: 0.8s; 
+            animation-delay: 0.4s; 
+            animation-name: fadeInUp;
+            background-color: var(--primary-color);
+            color:#FFF;
+            -webkit-box-shadow: -1px 2px 10px 1px rgba(255, 255, 255, .4); 
+            box-shadow: -1px 2px 10px 1px rgba(255, 255, 255, .4);
+            margin-top: calc( (var(--wrap-box-height) / 2) - ((var(--btn-vertical-padding) - 2.5px) * 2) );
+        }
+
+        .wrap-cv .container a:hover{
+            background-color: #FFF;
+            color:var(--primary-color);
+        }
+    </style>
 
     @if(false)
     <x-Widget-About />

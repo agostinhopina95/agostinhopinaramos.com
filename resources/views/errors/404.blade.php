@@ -1,9 +1,6 @@
 <x-Header title="404 Page" />
 
-<x-Widget-Navbar :menu=False />
-
     <main class="main">
-
         <div class="not_found_bkg">
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
             viewBox="0 0 800 600">
@@ -259,7 +256,6 @@
             </g>
             </svg>
         </div>
-
         <div class="e-message">
             <p>404 - Page not found.</p>
             <span>Sorry, we couldn't find this path: <strong>{{ Request::path() }}</strong>.</span>
