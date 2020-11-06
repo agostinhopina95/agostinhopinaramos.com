@@ -1,7 +1,7 @@
 {
     "private": true,
     "scripts": {
-        "deploy-to-server": "gulp deploy-server"
+        "deploy": "git ftp push"
     },
     "dependencies": {
         "git-url-parse": "^11.1.2",

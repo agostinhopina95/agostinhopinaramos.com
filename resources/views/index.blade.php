@@ -1,6 +1,6 @@
 @php
 $obj = [
-    "copyright" => '<p>Al Right Reserved AgostinhoPinaRamos © 2020 by <a href="https://goodshapecode.com/" >Goodshapecode</a></p>',
+    "copyright" => '<p>All Right Reserved AgostinhoPinaRamos © 2020 by <a href="https://goodshapecode.com/" >Goodshapecode</a></p>',
     "social_networks" => [
         [
             "icon" => "fa fa-linkedin",
