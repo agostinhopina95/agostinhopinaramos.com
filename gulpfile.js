@@ -3,7 +3,6 @@ const sourcemaps = require("gulp-sourcemaps");
 const path = require('path');
 const sass = require("gulp-sass");
 const cleanCSS = require("gulp-clean-css");
-const zip = require("gulp-zip");
 const imagemin = require("gulp-imagemin");
 const scaleImages = require('gulp-scale-images');
 const rename = require("gulp-rename");
@@ -11,7 +10,6 @@ const concat = require("gulp-concat");
 const uglify = require("gulp-uglify-es").default;
 const favicons = require("favicons").stream;
 const log = require("fancy-log");
-const openurl = require("openurl");
 const autoprefixer = require("gulp-autoprefixer");
 const concatCss = require('gulp-concat-css');
 const flatMap = require('flat-map').default;
@@ -24,36 +22,9 @@ const computeFileName = (output, scale, cb) => {
     cb(null, fileName)
 }
 
-/** FTP **/
-/* Save all changes in Server */
-gulp.task("zip-project", function (done) {
-    return gulp
-        .src([
-            "./.*",
-            "./*",
-            "./**/*",
-            "./.**/*",
-
-            /* ignore */
-            "!./.git/**/*",
-            "!./.vscode/**/*",
-            "!./public/.remote/**/*",
-            "!./node_modules/**/*",
-            "!./resources/assets/**/*"
-        ])
-        .pipe(zip("agostinhopinaramos.com.zip"))
-        .pipe(gulp.dest("./public/.remote/"));
-    done();
-});
-gulp.task("send-zip", function (done) {
-    openurl.open("http://localhost/.remote/send.php");
-    done();
-});
-gulp.task("deploy-server", gulp.series("zip-project", "send-zip"));
-/** FTP **/
-
 // Favicon generator ..
 gulp.task("favicon", function (done) {
+
     return gulp.src("./resources/assets/storage/img/logo.svg")
         .pipe(
             favicons({
@@ -83,7 +54,7 @@ gulp.task("favicon", function (done) {
 
 gulp.task("compile-css", function (done) {
     return gulp.src([
-            "./resources/assets/sass/layout/**/*-index.scss"
+            "./resources/assets/sass/layout/**/*.scss"
         ])
         .pipe(sourcemaps.init())
         .pipe(autoprefixer())
@@ -93,24 +64,52 @@ gulp.task("compile-css", function (done) {
     done();
 });
 
-gulp.task('unify-css', function (done) {
+gulp.task('unify-index-css', function (done) {
     return gulp.src('./resources/assets/css/**/*-index.css')
         .pipe(concatCss("style.css"))
         .pipe(rename({
             suffix: "-index.min"
         }))
-        .pipe(cleanCSS()) // Minify CSS files..
+        .pipe(cleanCSS())
         .pipe(gulp.dest('./public/css'));
     done();
 });
 
-gulp.task("compile-js", function (done) {
-    gulp.src([
-
-        ])
-        .pipe(gulp.dest("./public/js/vendor/"));
+gulp.task('unify-demo-css', function (done) {
+    return gulp.src('./resources/assets/css/**/*-demo.css')
+        .pipe(concatCss("style.css"))
+        .pipe(rename({
+            suffix: "-demo.min"
+        }))
+        .pipe(cleanCSS())
+        .pipe(gulp.dest('./public/css'));
     done();
 });
+
+gulp.task('unify-error-css', function (done) {
+    return gulp.src('./resources/assets/css/**/*-error.css')
+        .pipe(concatCss("style.css"))
+        .pipe(rename({
+            suffix: "-error.min"
+        }))
+        .pipe(cleanCSS())
+        .pipe(gulp.dest('./public/css'));
+    done();
+});
+
+gulp.task("unify-css", gulp.series(
+    "unify-index-css", 
+    "unify-demo-css", 
+    "unify-error-css"
+));
+
+// gulp.task("compile-js", function (done) {
+//     gulp.src([
+
+//     ])
+//     .pipe(gulp.dest("./public/js/vendor/"));
+//     done();
+// });
 
 gulp.task("unify-js", function (done) {
     return gulp
@@ -180,4 +179,4 @@ gulp.task("img-minify", function (done) {
     done();
 });
 
-gulp.task("update-basic", gulp.series("compile-css", "unify-css", "compile-js", "unify-js"));
+gulp.task("update-basic", gulp.series("compile-css", "unify-css", "unify-js"));

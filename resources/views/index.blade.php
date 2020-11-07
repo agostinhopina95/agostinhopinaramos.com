@@ -114,19 +114,16 @@ $obj = [
 ];
 @endphp
 
-<x-Header />
-
-<x-Include-Link>
-    [
-        {
-            "parent" : document.body,
-            "file" : [
-                "@php echo return_path(Request::path()) . '/js/bundle-index.min.js'; @endphp",
-                "@php echo return_path(Request::path()) . '/css/style-index.min.css'; @endphp",
-            ]
-        }
-    ]
-</x-Include-Link>
+<x-Header >
+<script type="text/javascript" src="//maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyBq0itdZJFJ6ZepExv40PhvdP7uryDUOrw" ></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DLK0YQS3WW"></script>
+<script type="text/javascript" >
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-DLK0YQS3WW');
+</script>
+</x-Header>
 
     <!-- Start Loader -->
     <div class="section-loader">
@@ -165,4 +162,7 @@ $obj = [
 
     <x-Widget-Footer :obj=$obj />
 
-<x-Footer />
+<x-Footer>
+<link rel='stylesheet' href="@php echo return_path(Request::path()) . '/css/style-index.min.css'; @endphp" type='text/css' />
+<script type="text/javascript" src="@php echo return_path(Request::path()) . '/js/bundle-index.min.js'; @endphp" ></script>
+</x-Footer>

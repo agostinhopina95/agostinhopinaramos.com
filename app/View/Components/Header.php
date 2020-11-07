@@ -31,9 +31,7 @@ class Header extends Component
         $this->author = "Agostinho Pina Ramos";
         $this->externalFONT = [];
         $this->externalCSS = [];
-        $this->externalJS = [
-            "//maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyBq0itdZJFJ6ZepExv40PhvdP7uryDUOrw"
-        ];
+        $this->externalJS = [];
         $this->themeClass = "white-vertion black-bg";
     }
 

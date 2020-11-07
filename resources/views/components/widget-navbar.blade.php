@@ -15,11 +15,6 @@
                   <li class="nav-item active">
                      <a class="nav-link" href="#mh-home">Home</a>
                   </li>
-                  <!--
-                  <li class="nav-item">
-                     <a class="nav-link" href="#mh-about">About</a>
-                  </li>
-                  -->
                   <li class="nav-item">
                      <a class="nav-link" href="#mh-portfolio">Portfolio</a>
                   </li>
@@ -29,14 +24,6 @@
                   <li class="nav-item">
                      <a class="nav-link" href="#mh-experience">Experiences</a>
                   </li>
-                  <!--
-                  <li class="nav-item">
-                     <a class="nav-link" href="#mh-pricing">Pricing</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="#mh-blog">Blog</a>
-                  </li>
-                  -->
                   <li class="nav-item">
                      <a class="nav-link" href="#mh-contact">Contact</a>
                   </li>
