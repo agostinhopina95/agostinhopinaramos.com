@@ -1,7 +1,7 @@
 /*! CSS Used from: Embedded */
 /* https://fontawesome.com/v4.7.0/icons/ */
 
-body {
+:root {
     --primary-color: #ff4500 !important;
     --secondary-color: #6c757d !important;
 }
@@ -26,7 +26,7 @@ div.e-message {
 }
 
 .not_found_bkg svg {
-    opacity: .1;
+    opacity: 0.1;
     position: fixed;
     top: -100px;
 }
@@ -76,21 +76,18 @@ div.e-message {
     font-size: 12px;
 }
 
-
 /*! CSS Used from: Embedded */
 
 button[disabled] {
-    background-color: #FFF !important;
+    background-color: #fff !important;
     color: var(--primary-color) !important;
 }
-
 
 /*! CSS Used from: Embedded */
 
 .compensate-for-scrollbar {
     margin-right: 17px;
 }
-
 
 /*! CSS Used from: http://cvresumetemplate.com/maha-personal-cv-resume-html-template/assets/icons/font-awesome-4.7.0/css/font-awesome.min.css */
 
@@ -203,7 +200,6 @@ button[disabled] {
     content: "\f254";
 }
 
-
 /*! CSS Used from: http://cvresumetemplate.com/maha-personal-cv-resume-html-template/assets/plugins/css/bootstrap.min.css */
 
 :root {
@@ -233,8 +229,11 @@ button[disabled] {
     --breakpoint-md: 768px;
     --breakpoint-lg: 992px;
     --breakpoint-xl: 1200px;
-    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+        "Segoe UI Emoji", "Segoe UI Symbol";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+        "Liberation Mono", "Courier New", monospace;
 }
 
 *,
@@ -263,7 +262,9 @@ section {
 
 body {
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+        "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
@@ -281,7 +282,7 @@ h3,
 h4,
 h5 {
     margin-top: 0;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
 }
 
 p {
@@ -371,14 +372,14 @@ button {
     text-transform: none;
 }
 
-[type=submit],
+[type="submit"],
 button,
-html [type=button] {
+html [type="button"] {
     -webkit-appearance: button;
 }
 
-[type=button]::-moz-focus-inner,
-[type=submit]::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner,
 button::-moz-focus-inner {
     padding: 0;
     border-style: none;
@@ -394,7 +395,7 @@ h2,
 h3,
 h4,
 h5 {
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
     font-family: inherit;
     font-weight: 500;
     line-height: 1.2;
@@ -432,25 +433,25 @@ h5 {
     margin-left: auto;
 }
 
-@media (min-width:576px) {
+@media (min-width: 576px) {
     .container {
         max-width: 540px;
     }
 }
 
-@media (min-width:768px) {
+@media (min-width: 768px) {
     .container {
         max-width: 720px;
     }
 }
 
-@media (min-width:992px) {
+@media (min-width: 992px) {
     .container {
         max-width: 960px;
     }
 }
 
-@media (min-width:1200px) {
+@media (min-width: 1200px) {
     .container {
         max-width: 1140px;
     }
@@ -480,7 +481,7 @@ h5 {
     padding-left: 15px;
 }
 
-@media (min-width:576px) {
+@media (min-width: 576px) {
     .col-sm-4 {
         -webkit-box-flex: 0;
         -ms-flex: 0 0 33.333333%;
@@ -517,7 +518,7 @@ h5 {
     }
 }
 
-@media (min-width:768px) {
+@media (min-width: 768px) {
     .col-md-4 {
         -webkit-box-flex: 0;
         -ms-flex: 0 0 33.333333%;
@@ -536,15 +537,15 @@ h5 {
 .form-control {
     display: block;
     width: 100%;
-    padding: .375rem .75rem;
+    padding: 0.375rem 0.75rem;
     font-size: 1rem;
     line-height: 1.5;
     color: #495057;
     background-color: #fff;
     background-clip: padding-box;
     border: 1px solid #ced4da;
-    border-radius: .25rem;
-    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 .form-control::-ms-expand {
@@ -557,7 +558,7 @@ h5 {
     background-color: #fff;
     border-color: #80bdff;
     outline: 0;
-    box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .25);
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 
 .form-control::-webkit-input-placeholder {
@@ -601,11 +602,12 @@ h5 {
     -ms-user-select: none;
     user-select: none;
     border: 1px solid transparent;
-    padding: .375rem .75rem;
+    padding: 0.375rem 0.75rem;
     font-size: 1rem;
     line-height: 1.5;
-    border-radius: .25rem;
-    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+        border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 .btn:focus,
@@ -615,12 +617,12 @@ h5 {
 
 .btn:focus {
     outline: 0;
-    box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .25);
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 
 .btn.disabled,
 .btn:disabled {
-    opacity: .65;
+    opacity: 0.65;
 }
 
 .btn-block {
@@ -634,7 +636,7 @@ h5 {
 
 .nav-link {
     display: block;
-    padding: .5rem 1rem;
+    padding: 0.5rem 1rem;
 }
 
 .nav-link:focus,
@@ -655,13 +657,13 @@ h5 {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding: .5rem 1rem;
+    padding: 0.5rem 1rem;
 }
 
 .navbar-brand {
     display: inline-block;
-    padding-top: .3125rem;
-    padding-bottom: .3125rem;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
     margin-right: 1rem;
     font-size: 1.25rem;
     line-height: inherit;
@@ -703,12 +705,12 @@ h5 {
 }
 
 .navbar-toggler {
-    padding: .25rem .75rem;
+    padding: 0.25rem 0.75rem;
     font-size: 1.25rem;
     line-height: 1;
     background-color: transparent;
     border: 1px solid transparent;
-    border-radius: .25rem;
+    border-radius: 0.25rem;
 }
 
 .navbar-toggler:focus,
@@ -726,7 +728,7 @@ h5 {
     background-size: 100% 100%;
 }
 
-@media (min-width:992px) {
+@media (min-width: 992px) {
     .navbar-expand-lg {
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
@@ -745,8 +747,8 @@ h5 {
     }
 
     .navbar-expand-lg .navbar-nav .nav-link {
-        padding-right: .5rem;
-        padding-left: .5rem;
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
     }
 
     .navbar-expand-lg .navbar-collapse {
@@ -779,7 +781,6 @@ h5 {
 }
 
 @media print {
-
     *,
     ::after,
     ::before {
@@ -820,14 +821,12 @@ h5 {
     }
 }
 
-
 /*! CSS Used from: http://cvresumetemplate.com/maha-personal-cv-resume-html-template/assets/plugins/css/animate.css */
 
 .fadeInUp {
     -webkit-animation-name: fadeInUp;
     animation-name: fadeInUp;
 }
-
 
 /*! CSS Used from: http://cvresumetemplate.com/maha-personal-cv-resume-html-template/assets/plugins/css/owl.css */
 
@@ -898,7 +897,6 @@ h5 {
     transform-style: preserve-3d;
 }
 
-
 /*! CSS Used from: http://cvresumetemplate.com/maha-personal-cv-resume-html-template/assets/plugins/css/jquery.fancybox.min.css */
 
 body.compensate-for-scrollbar {
@@ -943,12 +941,12 @@ body.compensate-for-scrollbar {
     opacity: 0;
     transition-duration: inherit;
     transition-property: opacity;
-    transition-timing-function: cubic-bezier(.47, 0, .74, .71);
+    transition-timing-function: cubic-bezier(0.47, 0, 0.74, 0.71);
 }
 
 .fancybox-is-open .fancybox-bg {
-    opacity: .9;
-    transition-timing-function: cubic-bezier(.22, .61, .36, 1);
+    opacity: 0.9;
+    transition-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
 .fancybox-caption,
@@ -958,7 +956,7 @@ body.compensate-for-scrollbar {
     direction: ltr;
     opacity: 0;
     position: absolute;
-    transition: opacity .25s ease, visibility 0s ease .25s;
+    transition: opacity 0.25s ease, visibility 0s ease 0.25s;
     visibility: hidden;
     z-index: 99997;
 }
@@ -1047,7 +1045,7 @@ body.compensate-for-scrollbar {
 }
 
 .fancybox-button {
-    background: rgba(30, 30, 30, .6);
+    background: rgba(30, 30, 30, 0.6);
     border: 0;
     border-radius: 0;
     box-shadow: none;
@@ -1057,7 +1055,7 @@ body.compensate-for-scrollbar {
     margin: 0;
     padding: 10px;
     position: relative;
-    transition: color .2s;
+    transition: color 0.2s;
     vertical-align: top;
     visibility: inherit;
     width: 44px;
@@ -1111,7 +1109,7 @@ body.compensate-for-scrollbar {
     border-radius: 0;
     color: #ccc;
     cursor: pointer;
-    opacity: .8;
+    opacity: 0.8;
     padding: 8px;
     position: absolute;
     right: -12px;
@@ -1157,7 +1155,16 @@ body.compensate-for-scrollbar {
 }
 
 .fancybox-caption {
-    background: linear-gradient(0deg, rgba(0, 0, 0, .85) 0, rgba(0, 0, 0, .3) 50%, rgba(0, 0, 0, .15) 65%, rgba(0, 0, 0, .075) 75.5%, rgba(0, 0, 0, .037) 82.85%, rgba(0, 0, 0, .019) 88%, transparent);
+    background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.85) 0,
+        rgba(0, 0, 0, 0.3) 50%,
+        rgba(0, 0, 0, 0.15) 65%,
+        rgba(0, 0, 0, 0.075) 75.5%,
+        rgba(0, 0, 0, 0.037) 82.85%,
+        rgba(0, 0, 0, 0.019) 88%,
+        transparent
+    );
     bottom: 0;
     color: #eee;
     font-size: 14px;
@@ -1181,7 +1188,7 @@ body.compensate-for-scrollbar {
     pointer-events: all;
 }
 
-@media (max-height:576px) {
+@media (max-height: 576px) {
     .fancybox-slide {
         padding-left: 6px;
         padding-right: 6px;
@@ -1197,7 +1204,6 @@ body.compensate-for-scrollbar {
     }
 }
 
-
 /*! CSS Used from: http://cvresumetemplate.com/maha-personal-cv-resume-html-template/assets/css/styles.css */
 
 * {
@@ -1206,8 +1212,10 @@ body.compensate-for-scrollbar {
 }
 
 .shadow-1 {
-    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
+        0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
+        0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
 html {
@@ -1257,6 +1265,37 @@ a:hover {
 a:focus {
     background-color: transparent;
     outline: 0 !important;
+}
+
+.wrap-cv {
+    --wrap-box-height: 220px;
+    --btn-vertical-padding: 15px;
+    width: 100%;
+    height: var(--wrap-box-height);
+    background-color: rgba(0, 0, 0, 0.1);
+    opacity: 0.8;
+    text-align: center;
+}
+
+.wrap-cv .container a {
+    padding: var(--btn-vertical-padding) 50px;
+    visibility: visible;
+    animation-duration: 0.8s;
+    animation-delay: 0.4s;
+    animation-name: fadeInUp;
+    background-color: var(--primary-color);
+    color: #fff;
+    -webkit-box-shadow: -1px 0px 10px 1px rgba(255, 255, 255, 0.4);
+    box-shadow: -1px 0px 10px 1px rgba(255, 255, 255, 0.4);
+    margin-top: calc(
+        (var(--wrap-box-height) / 2) -
+            ((var(--btn-vertical-padding) - 2.5px) * 2)
+    );
+}
+
+.wrap-cv .container a:hover {
+    background-color: #fff;
+    color: var(--primary-color);
 }
 
 .section-title {
@@ -1357,8 +1396,10 @@ ul li {
 }
 
 .form-control {
-    -webkit-box-shadow: 0 0px 2px 0 rgba(255, 255, 255, 0.16), 0 0px 2px 0 rgba(255, 255, 255, 0.12);
-    box-shadow: 0 0px 2px 0 rgba(255, 255, 255, 0.16), 0 0px 2px 0 rgba(255, 255, 255, 0.12);
+    -webkit-box-shadow: 0 0px 2px 0 rgba(255, 255, 255, 0.16),
+        0 0px 2px 0 rgba(255, 255, 255, 0.12);
+    box-shadow: 0 0px 2px 0 rgba(255, 255, 255, 0.16),
+        0 0px 2px 0 rgba(255, 255, 255, 0.12);
     background-color: transparent;
     border-color: transparent;
     margin-bottom: 20px;
@@ -1367,8 +1408,10 @@ ul li {
 }
 
 .form-control:focus {
-    -webkit-box-shadow: 0 0px 2px 0 rgba(255, 255, 255, 0.16), 0 0px 2px 0 rgba(255, 255, 255, 0.12);
-    box-shadow: 0 0px 2px 0 rgba(255, 255, 255, 0.16), 0 0px 2px 0 rgba(255, 255, 255, 0.12);
+    -webkit-box-shadow: 0 0px 2px 0 rgba(255, 255, 255, 0.16),
+        0 0px 2px 0 rgba(255, 255, 255, 0.12);
+    box-shadow: 0 0px 2px 0 rgba(255, 255, 255, 0.16),
+        0 0px 2px 0 rgba(255, 255, 255, 0.12);
     background-color: transparent;
 }
 
@@ -1410,19 +1453,25 @@ button:focus {
 
 .form-control {
     padding: 20px;
-    -webkit-box-shadow: 0 0px 2px 0 rgba(255, 255, 255, 0.8), 0 0px 1px 1px rgba(255, 255, 255, 0.8);
-    box-shadow: 0 0px 2px 0 rgba(255, 255, 255, 0.8), 0 0px 1px 1px rgba(255, 255, 255, 0.8);
+    -webkit-box-shadow: 0 0px 2px 0 rgba(255, 255, 255, 0.8),
+        0 0px 1px 1px rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0px 2px 0 rgba(255, 255, 255, 0.8),
+        0 0px 1px 1px rgba(255, 255, 255, 0.8);
 }
 
 .form-control:focus {
-    -webkit-box-shadow: 0 0px 2px 0 rgba(255, 255, 255, 0.8), 0 0px 1px 1px rgba(255, 255, 255, 0.8);
-    box-shadow: 0 0px 2px 0 rgba(255, 255, 255, 0.8), 0 0px 1px 1px rgba(255, 255, 255, 0.8);
+    -webkit-box-shadow: 0 0px 2px 0 rgba(255, 255, 255, 0.8),
+        0 0px 1px 1px rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0px 2px 0 rgba(255, 255, 255, 0.8),
+        0 0px 1px 1px rgba(255, 255, 255, 0.8);
     border-color: transparent;
 }
 
 .contact-message {
-    -webkit-box-shadow: 0 0px 2px 0 rgba(255, 255, 255, 0.8), 0 0px 1px 1px rgba(255, 255, 255, 0.8);
-    box-shadow: 0 0px 2px 0 rgba(255, 255, 255, 0.8), 0 0px 1px 1px rgba(255, 255, 255, 0.8);
+    -webkit-box-shadow: 0 0px 2px 0 rgba(255, 255, 255, 0.8),
+        0 0px 1px 1px rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0px 2px 0 rgba(255, 255, 255, 0.8),
+        0 0px 1px 1px rgba(255, 255, 255, 0.8);
     background-color: transparent;
     border-color: transparent;
     margin-bottom: 20px;
@@ -1448,8 +1497,10 @@ button:focus {
 }
 
 .contact-message:focus {
-    -webkit-box-shadow: 0 0px 2px 0 rgba(255, 255, 255, 0.8), 0 0px 1px 1px rgba(255, 255, 255, 0.8);
-    box-shadow: 0 0px 2px 0 rgba(255, 255, 255, 0.8), 0 0px 1px 1px rgba(255, 255, 255, 0.8);
+    -webkit-box-shadow: 0 0px 2px 0 rgba(255, 255, 255, 0.8),
+        0 0px 1px 1px rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0px 2px 0 rgba(255, 255, 255, 0.8),
+        0 0px 1px 1px rgba(255, 255, 255, 0.8);
     border-color: transparent;
 }
 
@@ -1593,28 +1644,36 @@ h5 {
 }
 
 .white-vertion .mh-footer .form-control {
-    -webkit-box-shadow: 0 0px 1px 0 rgba(40, 40, 40, 0.1), 0 0px 1px 0px rgba(40, 40, 40, 0.1);
-    box-shadow: 0 0px 1px 0 rgba(40, 40, 40, 0.1), 0 0px 1px 0px rgba(40, 40, 40, 0.1);
+    -webkit-box-shadow: 0 0px 1px 0 rgba(40, 40, 40, 0.1),
+        0 0px 1px 0px rgba(40, 40, 40, 0.1);
+    box-shadow: 0 0px 1px 0 rgba(40, 40, 40, 0.1),
+        0 0px 1px 0px rgba(40, 40, 40, 0.1);
     color: #000;
     background-color: white;
 }
 
 .white-vertion .mh-footer .form-control:focus {
-    -webkit-box-shadow: 0 0px 1px 0 rgba(40, 40, 40, 0.8), 0 0px 1px 0px rgba(40, 40, 40, 0.8);
-    box-shadow: 0 0px 1px 0 rgba(40, 40, 40, 0.8), 0 0px 1px 0px rgba(40, 40, 40, 0.8);
+    -webkit-box-shadow: 0 0px 1px 0 rgba(40, 40, 40, 0.8),
+        0 0px 1px 0px rgba(40, 40, 40, 0.8);
+    box-shadow: 0 0px 1px 0 rgba(40, 40, 40, 0.8),
+        0 0px 1px 0px rgba(40, 40, 40, 0.8);
 }
 
 .white-vertion .mh-footer .contact-message {
-    -webkit-box-shadow: 0 0px 1px 0 rgba(40, 40, 40, 0.8), 0 0px 1px 0px rgba(40, 40, 40, 0.8);
-    box-shadow: 0 0px 1px 0 rgba(40, 40, 40, 0.8), 0 0px 1px 0px rgba(40, 40, 40, 0.8);
+    -webkit-box-shadow: 0 0px 1px 0 rgba(40, 40, 40, 0.8),
+        0 0px 1px 0px rgba(40, 40, 40, 0.8);
+    box-shadow: 0 0px 1px 0 rgba(40, 40, 40, 0.8),
+        0 0px 1px 0px rgba(40, 40, 40, 0.8);
     color: #000;
     background-color: white;
     resize: none;
 }
 
 .white-vertion .mh-footer .contact-message:focus {
-    -webkit-box-shadow: 0 0px 1px 0 rgba(40, 40, 40, 0.8), 0 0px 1px 0px rgba(40, 40, 40, 0.8);
-    box-shadow: 0 0px 1px 0 rgba(40, 40, 40, 0.8), 0 0px 1px 0px rgba(40, 40, 40, 0.8);
+    -webkit-box-shadow: 0 0px 1px 0 rgba(40, 40, 40, 0.8),
+        0 0px 1px 0px rgba(40, 40, 40, 0.8);
+    box-shadow: 0 0px 1px 0 rgba(40, 40, 40, 0.8),
+        0 0px 1px 0px rgba(40, 40, 40, 0.8);
 }
 
 .white-vertion .mh-blog .mh-blog-item .blog-inner h2 a {
@@ -1684,7 +1743,7 @@ h5 {
 }
 
 .section-loader .loader div:nth-child(1) {
-    border-color: #E91E63;
+    border-color: #e91e63;
 }
 
 .section-loader .loader div:nth-child(2) {
@@ -1696,7 +1755,8 @@ h5 {
 .section-loader .loader {
     width: 200px !important;
     height: 200px !important;
-    -webkit-transform: translate(-100px, -100px) scale(1) translate(100px, 100px);
+    -webkit-transform: translate(-100px, -100px) scale(1)
+        translate(100px, 100px);
     transform: translate(-100px, -100px) scale(1) translate(100px, 100px);
 }
 
@@ -1834,7 +1894,7 @@ h5 {
     margin: 0 auto;
     float: none;
     text-align: center;
-    border: 5px solid rgba(0, 0, 0, .17);
+    border: 5px solid rgba(0, 0, 0, 0.17);
     width: 300px;
     height: 300px;
     border-radius: 50%;
@@ -2004,8 +2064,10 @@ h5 {
     margin-bottom: 30px;
     padding: 26px 30px;
     border-radius: 4px;
-    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
+        0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
+        0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
 .mh-experince .mh-education-deatils .mh-education-item:last-child {
@@ -2054,8 +2116,10 @@ h5 {
     margin-bottom: 30px;
     padding: 20px 30px;
     border-radius: 4px;
-    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
+        0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
+        0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
 .mh-work .mh-experience-deatils .mh-work-item:last-child {
@@ -2154,8 +2218,10 @@ h5 {
 .mh-pricing .mh-pricing {
     padding: 30px 0;
     text-align: center;
-    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
+        0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
+        0 2px 10px 0 rgba(0, 0, 0, 0.12);
     -webkit-transition: 0.3s;
     transition: 0.3s;
     margin-bottom: 30px;
@@ -2210,8 +2276,10 @@ h5 {
     -webkit-transition: 0.3s;
     transition: 0.3s;
     border-radius: 10px 10px 0px 0px;
-    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
+        0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
+        0 2px 10px 0 rgba(0, 0, 0, 0.12);
     margin-bottom: 30px;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
@@ -2261,8 +2329,10 @@ h5 {
     text-align: center;
     padding: 30px;
     border-radius: 4px;
-    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
+        0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
+        0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
 .mh-testimonial .mh-client-item img {
@@ -2348,19 +2418,25 @@ h5 {
 
 .mh-footer .form-control {
     padding: 20px;
-    -webkit-box-shadow: 0 0px 2px 0 rgba(255, 255, 255, 0.8), 0 0px 1px 1px rgba(255, 255, 255, 0.8);
-    box-shadow: 0 0px 2px 0 rgba(255, 255, 255, 0.8), 0 0px 1px 1px rgba(255, 255, 255, 0.8);
+    -webkit-box-shadow: 0 0px 2px 0 rgba(255, 255, 255, 0.8),
+        0 0px 1px 1px rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0px 2px 0 rgba(255, 255, 255, 0.8),
+        0 0px 1px 1px rgba(255, 255, 255, 0.8);
 }
 
 .mh-footer .form-control:focus {
-    -webkit-box-shadow: 0 0px 2px 0 rgba(255, 255, 255, 0.8), 0 0px 1px 1px rgba(255, 255, 255, 0.8);
-    box-shadow: 0 0px 2px 0 rgba(255, 255, 255, 0.8), 0 0px 1px 1px rgba(255, 255, 255, 0.8);
+    -webkit-box-shadow: 0 0px 2px 0 rgba(255, 255, 255, 0.8),
+        0 0px 1px 1px rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0px 2px 0 rgba(255, 255, 255, 0.8),
+        0 0px 1px 1px rgba(255, 255, 255, 0.8);
     border-color: transparent;
 }
 
 .mh-footer .contact-message {
-    -webkit-box-shadow: 0 0px 2px 0 rgba(255, 255, 255, 0.8), 0 0px 1px 1px rgba(255, 255, 255, 0.8);
-    box-shadow: 0 0px 2px 0 rgba(255, 255, 255, 0.8), 0 0px 1px 1px rgba(255, 255, 255, 0.8);
+    -webkit-box-shadow: 0 0px 2px 0 rgba(255, 255, 255, 0.8),
+        0 0px 1px 1px rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0px 2px 0 rgba(255, 255, 255, 0.8),
+        0 0px 1px 1px rgba(255, 255, 255, 0.8);
     background-color: transparent;
     border-color: transparent;
     border-radius: 4px;
@@ -2371,8 +2447,10 @@ h5 {
 }
 
 .mh-footer .contact-message:focus {
-    -webkit-box-shadow: 0 0px 2px 0 rgba(255, 255, 255, 0.8), 0 0px 1px 1px rgba(255, 255, 255, 0.8);
-    box-shadow: 0 0px 2px 0 rgba(255, 255, 255, 0.8), 0 0px 1px 1px rgba(255, 255, 255, 0.8);
+    -webkit-box-shadow: 0 0px 2px 0 rgba(255, 255, 255, 0.8),
+        0 0px 1px 1px rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0px 2px 0 rgba(255, 255, 255, 0.8),
+        0 0px 1px 1px rgba(255, 255, 255, 0.8);
     border-color: transparent;
 }
 
@@ -2424,8 +2502,10 @@ h5 {
 
 .nav-strict {
     z-index: 99;
-    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
+        0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
+        0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
 .mh-fixed-nav {
@@ -2493,7 +2573,7 @@ h5 {
 }
 
 .mh-project-gallery .grid-item figure figcaption:after {
-    content: '';
+    content: "";
     position: absolute;
     width: 100%;
     height: 100%;
@@ -2503,11 +2583,16 @@ h5 {
     transition: all 0.4s ease-out;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    transform: translateX(0) translateY(0) translateZ(0) rotate(0deg) scale(0.95);
-    -o-transform: translateX(0) translateY(0) translateZ(0) rotate(0deg) scale(0.95);
-    -ms-transform: translateX(0) translateY(0) translateZ(0) rotate(0deg) scale(0.95);
-    -moz-transform: translateX(0) translateY(0) translateZ(0) rotate(0deg) scale(0.95);
-    -webkit-transform: translateX(0) translateY(0) translateZ(0) rotate(0deg) scale(0.95);
+    transform: translateX(0) translateY(0) translateZ(0) rotate(0deg)
+        scale(0.95);
+    -o-transform: translateX(0) translateY(0) translateZ(0) rotate(0deg)
+        scale(0.95);
+    -ms-transform: translateX(0) translateY(0) translateZ(0) rotate(0deg)
+        scale(0.95);
+    -moz-transform: translateX(0) translateY(0) translateZ(0) rotate(0deg)
+        scale(0.95);
+    -webkit-transform: translateX(0) translateY(0) translateZ(0) rotate(0deg)
+        scale(0.95);
     z-index: -1;
     opacity: 0;
 }
@@ -2525,10 +2610,14 @@ h5 {
     top: 45%;
     margin-top: -22px;
     transform: translateX(0px) translateY(0) translateZ(0) rotate(0deg) scale(1);
-    -o-transform: translateX(0px) translateY(0) translateZ(0) rotate(0deg) scale(1);
-    -ms-transform: translateX(0px) translateY(0) translateZ(0) rotate(0deg) scale(1);
-    -moz-transform: translateX(0px) translateY(0) translateZ(0) rotate(0deg) scale(1);
-    -webkit-transform: translateX(0px) translateY(0) translateZ(0) rotate(0deg) scale(1);
+    -o-transform: translateX(0px) translateY(0) translateZ(0) rotate(0deg)
+        scale(1);
+    -ms-transform: translateX(0px) translateY(0) translateZ(0) rotate(0deg)
+        scale(1);
+    -moz-transform: translateX(0px) translateY(0) translateZ(0) rotate(0deg)
+        scale(1);
+    -webkit-transform: translateX(0px) translateY(0) translateZ(0) rotate(0deg)
+        scale(1);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     opacity: 0;
@@ -2549,11 +2638,16 @@ h5 {
     top: 50%;
     margin-top: 30px;
     margin-top: -2px;
-    transform: translateX(80px) translateY(0) translateZ(0) rotate(0deg) scale(1);
-    -o-transform: translateX(80px) translateY(0) translateZ(0) rotate(0deg) scale(1);
-    -ms-transform: translateX(80px) translateY(0) translateZ(0) rotate(0deg) scale(1);
-    -moz-transform: translateX(80px) translateY(0) translateZ(0) rotate(0deg) scale(1);
-    -webkit-transform: translateX(80px) translateY(0) translateZ(0) rotate(0deg) scale(1);
+    transform: translateX(80px) translateY(0) translateZ(0) rotate(0deg)
+        scale(1);
+    -o-transform: translateX(80px) translateY(0) translateZ(0) rotate(0deg)
+        scale(1);
+    -ms-transform: translateX(80px) translateY(0) translateZ(0) rotate(0deg)
+        scale(1);
+    -moz-transform: translateX(80px) translateY(0) translateZ(0) rotate(0deg)
+        scale(1);
+    -webkit-transform: translateX(80px) translateY(0) translateZ(0) rotate(0deg)
+        scale(1);
     -webkit-transition: all 0.4s ease-out;
     transition: all 0.4s ease-out;
     -webkit-font-smoothing: antialiased;
@@ -2572,11 +2666,16 @@ h5 {
     font-size: 13px;
     top: 50%;
     margin-top: 30px;
-    transform: translateX(-70px) translateY(0) translateZ(0) rotate(0deg) scale(1);
-    -o-transform: translateX(-70px) translateY(0) translateZ(0) rotate(0deg) scale(1);
-    -ms-transform: translateX(-70px) translateY(0) translateZ(0) rotate(0deg) scale(1);
-    -moz-transform: translateX(-70px) translateY(0) translateZ(0) rotate(0deg) scale(1);
-    -webkit-transform: translateX(-70px) translateY(0) translateZ(0) rotate(0deg) scale(1);
+    transform: translateX(-70px) translateY(0) translateZ(0) rotate(0deg)
+        scale(1);
+    -o-transform: translateX(-70px) translateY(0) translateZ(0) rotate(0deg)
+        scale(1);
+    -ms-transform: translateX(-70px) translateY(0) translateZ(0) rotate(0deg)
+        scale(1);
+    -moz-transform: translateX(-70px) translateY(0) translateZ(0) rotate(0deg)
+        scale(1);
+    -webkit-transform: translateX(-70px) translateY(0) translateZ(0)
+        rotate(0deg) scale(1);
     -webkit-transition: 0.5s;
     transition: 0.5s;
     -webkit-font-smoothing: antialiased;
@@ -2612,10 +2711,14 @@ h5 {
 .mh-project-gallery .grid-item figure:hover figcaption:after {
     opacity: 1;
     transform: translateX(0) translateY(0) translateZ(0) rotate(0deg) scale(1);
-    -o-transform: translateX(0) translateY(0) translateZ(0) rotate(0deg) scale(1);
-    -ms-transform: translateX(0) translateY(0) translateZ(0) rotate(0deg) scale(1);
-    -moz-transform: translateX(0) translateY(0) translateZ(0) rotate(0deg) scale(1);
-    -webkit-transform: translateX(0) translateY(0) translateZ(0) rotate(0deg) scale(1);
+    -o-transform: translateX(0) translateY(0) translateZ(0) rotate(0deg)
+        scale(1);
+    -ms-transform: translateX(0) translateY(0) translateZ(0) rotate(0deg)
+        scale(1);
+    -moz-transform: translateX(0) translateY(0) translateZ(0) rotate(0deg)
+        scale(1);
+    -webkit-transform: translateX(0) translateY(0) translateZ(0) rotate(0deg)
+        scale(1);
     -webkit-transition: all 0.4s ease-out;
     transition: all 0.4s ease-out;
     -webkit-font-smoothing: antialiased;
@@ -2624,10 +2727,14 @@ h5 {
 
 .mh-project-gallery .grid-item figure:hover figcaption .fa {
     transform: translateX(0px) translateY(0) translateZ(0) rotate(0deg) scale(1);
-    -o-transform: translateX(0px) translateY(0) translateZ(0) rotate(0deg) scale(1);
-    -ms-transform: translateX(0px) translateY(0) translateZ(0) rotate(0deg) scale(1);
-    -moz-transform: translateX(0px) translateY(0) translateZ(0) rotate(0deg) scale(1);
-    -webkit-transform: translateX(0px) translateY(0) translateZ(0) rotate(0deg) scale(1);
+    -o-transform: translateX(0px) translateY(0) translateZ(0) rotate(0deg)
+        scale(1);
+    -ms-transform: translateX(0px) translateY(0) translateZ(0) rotate(0deg)
+        scale(1);
+    -moz-transform: translateX(0px) translateY(0) translateZ(0) rotate(0deg)
+        scale(1);
+    -webkit-transform: translateX(0px) translateY(0) translateZ(0) rotate(0deg)
+        scale(1);
     -webkit-transition: 0.2s;
     transition: 0.2s;
     opacity: 1;
@@ -2635,10 +2742,14 @@ h5 {
 
 .mh-project-gallery .grid-item figure:hover figcaption .title {
     transform: translateX(0px) translateY(0) translateZ(0) rotate(0deg) scale(1);
-    -o-transform: translateX(0px) translateY(0) translateZ(0) rotate(0deg) scale(1);
-    -ms-transform: translateX(0px) translateY(0) translateZ(0) rotate(0deg) scale(1);
-    -moz-transform: translateX(0px) translateY(0) translateZ(0) rotate(0deg) scale(1);
-    -webkit-transform: translateX(0px) translateY(0) translateZ(0) rotate(0deg) scale(1);
+    -o-transform: translateX(0px) translateY(0) translateZ(0) rotate(0deg)
+        scale(1);
+    -ms-transform: translateX(0px) translateY(0) translateZ(0) rotate(0deg)
+        scale(1);
+    -moz-transform: translateX(0px) translateY(0) translateZ(0) rotate(0deg)
+        scale(1);
+    -webkit-transform: translateX(0px) translateY(0) translateZ(0) rotate(0deg)
+        scale(1);
     -webkit-transition: 0.4s;
     transition: 0.4s;
     opacity: 1;
@@ -2646,10 +2757,14 @@ h5 {
 
 .mh-project-gallery .grid-item figure:hover figcaption .sub-title {
     transform: translateX(0px) translateY(0) translateZ(0) rotate(0deg) scale(1);
-    -o-transform: translateX(0px) translateY(0) translateZ(0) rotate(0deg) scale(1);
-    -ms-transform: translateX(0px) translateY(0) translateZ(0) rotate(0deg) scale(1);
-    -moz-transform: translateX(0px) translateY(0) translateZ(0) rotate(0deg) scale(1);
-    -webkit-transform: translateX(0px) translateY(0) translateZ(0) rotate(0deg) scale(1);
+    -o-transform: translateX(0px) translateY(0) translateZ(0) rotate(0deg)
+        scale(1);
+    -ms-transform: translateX(0px) translateY(0) translateZ(0) rotate(0deg)
+        scale(1);
+    -moz-transform: translateX(0px) translateY(0) translateZ(0) rotate(0deg)
+        scale(1);
+    -webkit-transform: translateX(0px) translateY(0) translateZ(0) rotate(0deg)
+        scale(1);
     -webkit-transition: 0.6s;
     transition: 0.6s;
     opacity: 1;
@@ -2722,8 +2837,10 @@ h5 {
 }
 
 .shadow-1 {
-    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
+        0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
+        0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
 @media only screen and (max-width: 991px) {
@@ -2749,11 +2866,16 @@ h5 {
         margin-top: 0px;
         padding: 0;
         background-color: #0bceaf;
-        transform: translateX(-100%) translateY(0) translateZ(0) rotate(0deg) scale(1);
-        -o-transform: translateX(-100%) translateY(0) translateZ(0) rotate(0deg) scale(1);
-        -ms-transform: translateX(-100%) translateY(0) translateZ(0) rotate(0deg) scale(1);
-        -moz-transform: translateX(-100%) translateY(0) translateZ(0) rotate(0deg) scale(1);
-        -webkit-transform: translateX(-100%) translateY(0) translateZ(0) rotate(0deg) scale(1);
+        transform: translateX(-100%) translateY(0) translateZ(0) rotate(0deg)
+            scale(1);
+        -o-transform: translateX(-100%) translateY(0) translateZ(0) rotate(0deg)
+            scale(1);
+        -ms-transform: translateX(-100%) translateY(0) translateZ(0)
+            rotate(0deg) scale(1);
+        -moz-transform: translateX(-100%) translateY(0) translateZ(0)
+            rotate(0deg) scale(1);
+        -webkit-transform: translateX(-100%) translateY(0) translateZ(0)
+            rotate(0deg) scale(1);
         -webkit-transition: all 0.4s ease-out;
         transition: all 0.4s ease-out;
         -webkit-font-smoothing: antialiased;
@@ -2766,11 +2888,16 @@ h5 {
     }
 
     .mh-xs-mobile-nav .navbar-toggler .icon {
-        transform: translateX(-50%) translateY(-50%) translateZ(0) rotate(0deg) scale(1);
-        -o-transform: translateX(-50%) translateY(-50%) translateZ(0) rotate(0deg) scale(1);
-        -ms-transform: translateX(-50%) translateY(-50%) translateZ(0) rotate(0deg) scale(1);
-        -moz-transform: translateX(-50%) translateY(-50%) translateZ(0) rotate(0deg) scale(1);
-        -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0) rotate(0deg) scale(1);
+        transform: translateX(-50%) translateY(-50%) translateZ(0) rotate(0deg)
+            scale(1);
+        -o-transform: translateX(-50%) translateY(-50%) translateZ(0)
+            rotate(0deg) scale(1);
+        -ms-transform: translateX(-50%) translateY(-50%) translateZ(0)
+            rotate(0deg) scale(1);
+        -moz-transform: translateX(-50%) translateY(-50%) translateZ(0)
+            rotate(0deg) scale(1);
+        -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0)
+            rotate(0deg) scale(1);
     }
 
     .mh-xs-mobile-nav .navbar-toggler .icon,
@@ -2786,7 +2913,7 @@ h5 {
 
     .mh-xs-mobile-nav .navbar-toggler .icon::after,
     .mh-xs-mobile-nav .navbar-toggler .icon::before {
-        content: '';
+        content: "";
         top: 0;
         right: 0;
         -webkit-transition: all 0.6s ease-out;
@@ -2796,19 +2923,29 @@ h5 {
     }
 
     .mh-xs-mobile-nav .navbar-toggler .icon::after {
-        transform: translateX(0) translateY(6px) translateZ(0) rotate(0deg) scale(1);
-        -o-transform: translateX(0) translateY(6px) translateZ(0) rotate(0deg) scale(1);
-        -ms-transform: translateX(0) translateY(6px) translateZ(0) rotate(0deg) scale(1);
-        -moz-transform: translateX(0) translateY(6px) translateZ(0) rotate(0deg) scale(1);
-        -webkit-transform: translateX(0) translateY(6px) translateZ(0) rotate(0deg) scale(1);
+        transform: translateX(0) translateY(6px) translateZ(0) rotate(0deg)
+            scale(1);
+        -o-transform: translateX(0) translateY(6px) translateZ(0) rotate(0deg)
+            scale(1);
+        -ms-transform: translateX(0) translateY(6px) translateZ(0) rotate(0deg)
+            scale(1);
+        -moz-transform: translateX(0) translateY(6px) translateZ(0) rotate(0deg)
+            scale(1);
+        -webkit-transform: translateX(0) translateY(6px) translateZ(0)
+            rotate(0deg) scale(1);
     }
 
     .mh-xs-mobile-nav .navbar-toggler .icon::before {
-        transform: translateX(0) translateY(-6px) translateZ(0) rotate(0deg) scale(1);
-        -o-transform: translateX(0) translateY(-6px) translateZ(0) rotate(0deg) scale(1);
-        -ms-transform: translateX(0) translateY(-6px) translateZ(0) rotate(0deg) scale(1);
-        -moz-transform: translateX(0) translateY(-6px) translateZ(0) rotate(0deg) scale(1);
-        -webkit-transform: translateX(0) translateY(-6px) translateZ(0) rotate(0deg) scale(1);
+        transform: translateX(0) translateY(-6px) translateZ(0) rotate(0deg)
+            scale(1);
+        -o-transform: translateX(0) translateY(-6px) translateZ(0) rotate(0deg)
+            scale(1);
+        -ms-transform: translateX(0) translateY(-6px) translateZ(0) rotate(0deg)
+            scale(1);
+        -moz-transform: translateX(0) translateY(-6px) translateZ(0)
+            rotate(0deg) scale(1);
+        -webkit-transform: translateX(0) translateY(-6px) translateZ(0)
+            rotate(0deg) scale(1);
     }
 
     .mh-xs-mobile-nav .navbar-toggler:focus {
@@ -2851,11 +2988,16 @@ h5 {
         margin-top: 0px;
         padding: 0;
         background-color: #0bceaf;
-        transform: translateX(-100%) translateY(0) translateZ(0) rotate(0deg) scale(1);
-        -o-transform: translateX(-100%) translateY(0) translateZ(0) rotate(0deg) scale(1);
-        -ms-transform: translateX(-100%) translateY(0) translateZ(0) rotate(0deg) scale(1);
-        -moz-transform: translateX(-100%) translateY(0) translateZ(0) rotate(0deg) scale(1);
-        -webkit-transform: translateX(-100%) translateY(0) translateZ(0) rotate(0deg) scale(1);
+        transform: translateX(-100%) translateY(0) translateZ(0) rotate(0deg)
+            scale(1);
+        -o-transform: translateX(-100%) translateY(0) translateZ(0) rotate(0deg)
+            scale(1);
+        -ms-transform: translateX(-100%) translateY(0) translateZ(0)
+            rotate(0deg) scale(1);
+        -moz-transform: translateX(-100%) translateY(0) translateZ(0)
+            rotate(0deg) scale(1);
+        -webkit-transform: translateX(-100%) translateY(0) translateZ(0)
+            rotate(0deg) scale(1);
         -webkit-transition: all 0.4s ease-out;
         transition: all 0.4s ease-out;
         -webkit-font-smoothing: antialiased;
@@ -3210,7 +3352,6 @@ h5 {
     color: var(--primary-color);
 }
 
-
 /*! CSS Used keyframes */
 
 @-webkit-keyframes fadeInUp {
@@ -3291,293 +3432,393 @@ h5 {
     }
 }
 
-
 /*! CSS Used fontfaces */
 
 @font-face {
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 300;
-    src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fCRc4EsA.woff2?ce=43710006) format('woff2');
-    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+    src: local("Roboto Light"), local("Roboto-Light"),
+        url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fCRc4EsA.woff2?ce=43710006)
+            format("woff2");
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+        U+FE2E-FE2F;
 }
 
 @font-face {
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 300;
-    src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fABc4EsA.woff2?ce=43710006) format('woff2');
+    src: local("Roboto Light"), local("Roboto-Light"),
+        url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fABc4EsA.woff2?ce=43710006)
+            format("woff2");
     unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
 @font-face {
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 300;
-    src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fCBc4EsA.woff2?ce=43710006) format('woff2');
+    src: local("Roboto Light"), local("Roboto-Light"),
+        url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fCBc4EsA.woff2?ce=43710006)
+            format("woff2");
     unicode-range: U+1F00-1FFF;
 }
 
 @font-face {
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 300;
-    src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fBxc4EsA.woff2?ce=43710006) format('woff2');
+    src: local("Roboto Light"), local("Roboto-Light"),
+        url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fBxc4EsA.woff2?ce=43710006)
+            format("woff2");
     unicode-range: U+0370-03FF;
 }
 
 @font-face {
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 300;
-    src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fCxc4EsA.woff2?ce=43710006) format('woff2');
-    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+    src: local("Roboto Light"), local("Roboto-Light"),
+        url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fCxc4EsA.woff2?ce=43710006)
+            format("woff2");
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+        U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 }
 
 @font-face {
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 300;
-    src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fChc4EsA.woff2?ce=43710006) format('woff2');
-    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    src: local("Roboto Light"), local("Roboto-Light"),
+        url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fChc4EsA.woff2?ce=43710006)
+            format("woff2");
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+        U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 300;
-    src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fBBc4.woff2?ce=43710006) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    src: local("Roboto Light"), local("Roboto-Light"),
+        url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fBBc4.woff2?ce=43710006)
+            format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+        U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,
+        U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
-    src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu72xKOzY.woff2?ce=43710006) format('woff2');
-    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+    src: local("Roboto"), local("Roboto-Regular"),
+        url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu72xKOzY.woff2?ce=43710006)
+            format("woff2");
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+        U+FE2E-FE2F;
 }
 
 @font-face {
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
-    src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu5mxKOzY.woff2?ce=43710006) format('woff2');
+    src: local("Roboto"), local("Roboto-Regular"),
+        url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu5mxKOzY.woff2?ce=43710006)
+            format("woff2");
     unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
 @font-face {
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
-    src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu7mxKOzY.woff2?ce=43710006) format('woff2');
+    src: local("Roboto"), local("Roboto-Regular"),
+        url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu7mxKOzY.woff2?ce=43710006)
+            format("woff2");
     unicode-range: U+1F00-1FFF;
 }
 
 @font-face {
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
-    src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4WxKOzY.woff2?ce=43710006) format('woff2');
+    src: local("Roboto"), local("Roboto-Regular"),
+        url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4WxKOzY.woff2?ce=43710006)
+            format("woff2");
     unicode-range: U+0370-03FF;
 }
 
 @font-face {
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
-    src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu7WxKOzY.woff2?ce=43710006) format('woff2');
-    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+    src: local("Roboto"), local("Roboto-Regular"),
+        url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu7WxKOzY.woff2?ce=43710006)
+            format("woff2");
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+        U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 }
 
 @font-face {
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
-    src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu7GxKOzY.woff2?ce=43710006) format('woff2');
-    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    src: local("Roboto"), local("Roboto-Regular"),
+        url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu7GxKOzY.woff2?ce=43710006)
+            format("woff2");
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+        U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
-    src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxK.woff2?ce=43710006) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    src: local("Roboto"), local("Roboto-Regular"),
+        url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxK.woff2?ce=43710006)
+            format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+        U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,
+        U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 500;
-    src: local('Roboto Medium'), local('Roboto-Medium'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fCRc4EsA.woff2?ce=43710006) format('woff2');
-    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+    src: local("Roboto Medium"), local("Roboto-Medium"),
+        url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fCRc4EsA.woff2?ce=43710006)
+            format("woff2");
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+        U+FE2E-FE2F;
 }
 
 @font-face {
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 500;
-    src: local('Roboto Medium'), local('Roboto-Medium'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fABc4EsA.woff2?ce=43710006) format('woff2');
+    src: local("Roboto Medium"), local("Roboto-Medium"),
+        url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fABc4EsA.woff2?ce=43710006)
+            format("woff2");
     unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
 @font-face {
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 500;
-    src: local('Roboto Medium'), local('Roboto-Medium'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fCBc4EsA.woff2?ce=43710006) format('woff2');
+    src: local("Roboto Medium"), local("Roboto-Medium"),
+        url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fCBc4EsA.woff2?ce=43710006)
+            format("woff2");
     unicode-range: U+1F00-1FFF;
 }
 
 @font-face {
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 500;
-    src: local('Roboto Medium'), local('Roboto-Medium'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fBxc4EsA.woff2?ce=43710006) format('woff2');
+    src: local("Roboto Medium"), local("Roboto-Medium"),
+        url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fBxc4EsA.woff2?ce=43710006)
+            format("woff2");
     unicode-range: U+0370-03FF;
 }
 
 @font-face {
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 500;
-    src: local('Roboto Medium'), local('Roboto-Medium'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fCxc4EsA.woff2?ce=43710006) format('woff2');
-    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+    src: local("Roboto Medium"), local("Roboto-Medium"),
+        url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fCxc4EsA.woff2?ce=43710006)
+            format("woff2");
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+        U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 }
 
 @font-face {
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 500;
-    src: local('Roboto Medium'), local('Roboto-Medium'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fChc4EsA.woff2?ce=43710006) format('woff2');
-    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    src: local("Roboto Medium"), local("Roboto-Medium"),
+        url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fChc4EsA.woff2?ce=43710006)
+            format("woff2");
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+        U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 500;
-    src: local('Roboto Medium'), local('Roboto-Medium'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fBBc4.woff2?ce=43710006) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    src: local("Roboto Medium"), local("Roboto-Medium"),
+        url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fBBc4.woff2?ce=43710006)
+            format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+        U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,
+        U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 700;
-    src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlfCRc4EsA.woff2?ce=43710006) format('woff2');
-    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+    src: local("Roboto Bold"), local("Roboto-Bold"),
+        url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlfCRc4EsA.woff2?ce=43710006)
+            format("woff2");
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+        U+FE2E-FE2F;
 }
 
 @font-face {
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 700;
-    src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlfABc4EsA.woff2?ce=43710006) format('woff2');
+    src: local("Roboto Bold"), local("Roboto-Bold"),
+        url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlfABc4EsA.woff2?ce=43710006)
+            format("woff2");
     unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
 @font-face {
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 700;
-    src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlfCBc4EsA.woff2?ce=43710006) format('woff2');
+    src: local("Roboto Bold"), local("Roboto-Bold"),
+        url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlfCBc4EsA.woff2?ce=43710006)
+            format("woff2");
     unicode-range: U+1F00-1FFF;
 }
 
 @font-face {
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 700;
-    src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlfBxc4EsA.woff2?ce=43710006) format('woff2');
+    src: local("Roboto Bold"), local("Roboto-Bold"),
+        url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlfBxc4EsA.woff2?ce=43710006)
+            format("woff2");
     unicode-range: U+0370-03FF;
 }
 
 @font-face {
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 700;
-    src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlfCxc4EsA.woff2?ce=43710006) format('woff2');
-    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+    src: local("Roboto Bold"), local("Roboto-Bold"),
+        url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlfCxc4EsA.woff2?ce=43710006)
+            format("woff2");
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+        U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 }
 
 @font-face {
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 700;
-    src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlfChc4EsA.woff2?ce=43710006) format('woff2');
-    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    src: local("Roboto Bold"), local("Roboto-Bold"),
+        url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlfChc4EsA.woff2?ce=43710006)
+            format("woff2");
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+        U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 700;
-    src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlfBBc4.woff2?ce=43710006) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    src: local("Roboto Bold"), local("Roboto-Bold"),
+        url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlfBBc4.woff2?ce=43710006)
+            format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+        U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,
+        U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
-    src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu72xKOzY.woff2?ce=43710006) format('woff2');
-    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+    src: local("Roboto"), local("Roboto-Regular"),
+        url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu72xKOzY.woff2?ce=43710006)
+            format("woff2");
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+        U+FE2E-FE2F;
 }
 
 @font-face {
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
-    src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu5mxKOzY.woff2?ce=43710006) format('woff2');
+    src: local("Roboto"), local("Roboto-Regular"),
+        url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu5mxKOzY.woff2?ce=43710006)
+            format("woff2");
     unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
 @font-face {
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
-    src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu7mxKOzY.woff2?ce=43710006) format('woff2');
+    src: local("Roboto"), local("Roboto-Regular"),
+        url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu7mxKOzY.woff2?ce=43710006)
+            format("woff2");
     unicode-range: U+1F00-1FFF;
 }
 
 @font-face {
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
-    src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4WxKOzY.woff2?ce=43710006) format('woff2');
+    src: local("Roboto"), local("Roboto-Regular"),
+        url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4WxKOzY.woff2?ce=43710006)
+            format("woff2");
     unicode-range: U+0370-03FF;
 }
 
 @font-face {
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
-    src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu7WxKOzY.woff2?ce=43710006) format('woff2');
-    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+    src: local("Roboto"), local("Roboto-Regular"),
+        url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu7WxKOzY.woff2?ce=43710006)
+            format("woff2");
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+        U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 }
 
 @font-face {
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
-    src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu7GxKOzY.woff2?ce=43710006) format('woff2');
-    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    src: local("Roboto"), local("Roboto-Regular"),
+        url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu7GxKOzY.woff2?ce=43710006)
+            format("woff2");
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+        U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
-    src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxK.woff2?ce=43710006) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    src: local("Roboto"), local("Roboto-Regular"),
+        url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxK.woff2?ce=43710006)
+            format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+        U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,
+        U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
-    font-family: 'FontAwesome';
-    src: url('/fonts/fontawesome-webfont.eot?v=4.7.0');
-    src: url('/fonts/fontawesome-webfont.eot#iefix&v=4.7.0') format('embedded-opentype'), url('/fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('/fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('/fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+    font-family: "FontAwesome";
+    src: url("/fonts/fontawesome-webfont.eot?v=4.7.0");
+    src: url("/fonts/fontawesome-webfont.eot#iefix&v=4.7.0")
+            format("embedded-opentype"),
+        url("/fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"),
+        url("/fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"),
+        url("/fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"),
+        url("/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular")
+            format("svg");
     font-weight: normal;
     font-style: normal;
 }

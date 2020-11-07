@@ -113,7 +113,21 @@ $obj = [
     ],
 ];
 @endphp
+
 <x-Header />
+
+<x-Include-Link>
+    [
+        {
+            "parent" : document.body,
+            "file" : [
+                "@php echo return_path(Request::path()) . '/js/bundle-index.min.js'; @endphp",
+                "@php echo return_path(Request::path()) . '/css/style-index.min.css'; @endphp",
+            ]
+        }
+    ]
+</x-Include-Link>
+
     <!-- Start Loader -->
     <div class="section-loader">
         <div class="loader">
@@ -140,35 +154,6 @@ $obj = [
             </a>
         </div>
     </section>
-
-    <style>
-        .wrap-cv{
-            --wrap-box-height: 220px;
-            --btn-vertical-padding: 15px;
-            width: 100%;
-            height: var(--wrap-box-height);
-            background-color: rgba(255, 121, 71, .4);
-            opacity: .8;
-            text-align: center;
-        }
-        .wrap-cv .container a{
-            padding: var(--btn-vertical-padding) 50px;
-            visibility: visible; 
-            animation-duration: 0.8s; 
-            animation-delay: 0.4s; 
-            animation-name: fadeInUp;
-            background-color: var(--primary-color);
-            color:#FFF;
-            -webkit-box-shadow: -1px 0px 10px 1px rgba(255, 255, 255, .4); 
-            box-shadow: -1px 0px 10px 1px rgba(255, 255, 255, .4);
-            margin-top: calc( (var(--wrap-box-height) / 2) - ((var(--btn-vertical-padding) - 2.5px) * 2) );
-        }
-
-        .wrap-cv .container a:hover{
-            background-color: #FFF;
-            color:var(--primary-color);
-        }
-    </style>
 
     @if(false)
     <x-Widget-About />

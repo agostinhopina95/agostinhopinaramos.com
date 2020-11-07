@@ -1,5 +1,17 @@
 <x-Header title="404 Page" />
 
+    <x-Include-Link>
+        [
+            {
+                "parent" : document.body,
+                "file" : [
+                    "@php echo return_path(Request::path()) . '/js/bundle-index.min.js'; @endphp",
+                    "@php echo return_path(Request::path()) . '/css/style-index.min.css'; @endphp",
+                ]
+            }
+        ]
+    </x-Include-Link>
+
     <main class="main">
         <div class="not_found_bkg">
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"

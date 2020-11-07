@@ -22,7 +22,7 @@ class Header extends Component
     public $externalJS = [];
     public $themeClass;
 
-    public function __construct($title = "Personal Webpage - Agostinho Ramos", $path = "")
+    public function __construct($title = "Personal Webpage - Agostinho Ramos")
     {
         $this->lang = "en";
         $this->title = $title;

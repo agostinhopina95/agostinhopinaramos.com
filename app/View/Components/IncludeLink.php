@@ -2,25 +2,19 @@
 
 namespace App\View\Components;
 
-use Illuminate\Http\Request;
 use Illuminate\View\Component;
 
-class Footer extends Component
+class IncludeLink extends Component
 {
     /**
      * Create a new component instance.
      *
      * @return void
      */
-
-    public $internalCSS = [];
-    public $internalJS = [];
-    public $externalCSS = [];
-    public $externalJS = [];
-
-    public function __construct(Request $request)
+    
+    public function __construct()
     {
-        
+
     }
 
     /**
@@ -30,6 +24,6 @@ class Footer extends Component
      */
     public function render()
     {
-        return view('components.footer');
+        return view('components.include-link');
     }
 }

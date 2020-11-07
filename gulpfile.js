@@ -83,7 +83,7 @@ gulp.task("favicon", function (done) {
 
 gulp.task("compile-css", function (done) {
     return gulp.src([
-            "./resources/assets/sass/layout/**/*.scss"
+            "./resources/assets/sass/layout/**/*-index.scss"
         ])
         .pipe(sourcemaps.init())
         .pipe(autoprefixer())
@@ -94,10 +94,10 @@ gulp.task("compile-css", function (done) {
 });
 
 gulp.task('unify-css', function (done) {
-    return gulp.src('./resources/assets/css/**/*.css')
+    return gulp.src('./resources/assets/css/**/*-index.css')
         .pipe(concatCss("style.css"))
         .pipe(rename({
-            suffix: ".min"
+            suffix: "-index.min"
         }))
         .pipe(cleanCSS()) // Minify CSS files..
         .pipe(gulp.dest('./public/css'));
@@ -113,7 +113,8 @@ gulp.task("compile-js", function (done) {
 });
 
 gulp.task("unify-js", function (done) {
-    gulp.src([
+    return gulp
+        .src([
             "./resources/assets/js/jquery.min.js",
             "./resources/assets/js/owl.carousel.js",
             "./resources/assets/js/validator.min.js",
@@ -128,9 +129,9 @@ gulp.task("unify-js", function (done) {
             "./resources/assets/js/custom-scripts.js",
         ])
         .pipe(concat("bundle.js"))
-        //.pipe(uglify())
+        .pipe(uglify())
         .pipe(rename({
-            suffix: ".min"
+            suffix: "-index.min"
         }))
         .pipe(gulp.dest("./public/js/"));
     done();

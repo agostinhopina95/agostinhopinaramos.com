@@ -53,5 +53,8 @@
   "bugs": {
     "url": "https://github.com/agostinhopina95/agostinhopinaramos.com/issues"
   },
-  "homepage": "https://github.com/agostinhopina95/agostinhopinaramos.com#readme"
+  "homepage": "https://github.com/agostinhopina95/agostinhopinaramos.com#readme",
+  "dependencies": {
+    "gulp-md5": "^0.1.3"
+  }
 }
