@@ -54,7 +54,7 @@ gulp.task("deploy-server", gulp.series("zip-project", "send-zip"));
 
 // Favicon generator ..
 gulp.task("favicon", function (done) {
-    gulp.src("./resources/assets/storage/img/logo.svg")
+    return gulp.src("./resources/assets/storage/img/logo.svg")
         .pipe(
             favicons({
                 appName: "agostinhopinaramos",
@@ -172,14 +172,10 @@ gulp.task("profile-image", function (done) {
 
 // Images optimization
 gulp.task("img-minify", function (done) {
-    gulp
+    return gulp
         .src("./resources/assets/img/static/**/*.+(png|jpg|gif|svg|webp)")
         .pipe(imagemin())
         .pipe(gulp.dest("./public/img/static/"));
-    // gulp
-    //     .src("./resources/assets/img/favicon/**/*.+(png|jpg|gif|svg)")
-    //     .pipe(imagemin())
-    //     .pipe(gulp.dest("./public/img/favicon/"));
     done();
 });
 
