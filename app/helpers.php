@@ -12,7 +12,7 @@ function return_path($path){
 function send_email($object){
 
     $to = 'agostinhopina095@gmail.com';
-    $subject = 'Hello world!!!';
+    $subject = $object["name"] . ' sent you a message';
     $from = 'general@agostinhopinaramos.com';
 
     // To send HTML mail, the Content-type header must be set
