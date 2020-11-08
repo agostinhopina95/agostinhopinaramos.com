@@ -1,6 +1,6 @@
 <?php
-    $manifest_directory =  __DIR__ . "/../../../public" . '/storage/project/manifest/';
-    $manifest = file_get_contents( $manifest_directory . $id . '.json' );
+    $manifest_directory =  __DIR__ . "/../../../public" . '/storage/project/demo/';
+    $manifest = file_get_contents( $manifest_directory . $id . '/___hiden___/manifest.json' );
     $article = json_decode($manifest, true);
 ?>
 <header id="demo-header">

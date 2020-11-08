@@ -19,8 +19,3 @@ use Illuminate\Support\Facades\Mail;
 
 Route::get('/', [IndexController::class, 'index'])->name('index.index');
 Route::get('/demo/{type?}/{id?}', [DemoController::class, 'demo'])->name('demo.index');
-
-// Route::get('/email', function(){
-//     Mail::to('agostinhopina095@gmail.com')->send(new ClientMail());
-//     return new ClientMail();
-// });

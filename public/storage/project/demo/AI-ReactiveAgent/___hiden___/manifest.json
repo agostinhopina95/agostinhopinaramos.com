@@ -2,7 +2,7 @@
   "title" : "Reactive Agent",
   "subtitle" : "Disciplina de Inteligência Artificial",
   "thumbnail" : [
-    "/storage/project/source/AI-ReactiveAgent/thumbnail.png",
+    "/storage/project/demo/AI-ReactiveAgent/___hiden___/thumbnail.png",
     "Reactive Agent Image"
   ],
   "size":"250K",
@@ -19,11 +19,11 @@
 	"download" : "https://github.com/agostinhopina95/AI-ReactiveAgent/archive/master.zip",
     "figure" : [
       {
-       "img" : "/storage/project/source/AI-ReactiveAgent/demo1.png",
+       "img" : "/storage/project/demo/AI-ReactiveAgent/___hiden___/demo1.png",
        "description" : "Procura ouro state"
       },
 	  {
-       "img" : "/storage/project/source/AI-ReactiveAgent/demo2.png",
+       "img" : "/storage/project/demo/AI-ReactiveAgent/___hiden___/demo2.png",
        "description" : "Deambular 2"
       }
     ]

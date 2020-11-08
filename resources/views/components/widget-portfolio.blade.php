@@ -18,19 +18,19 @@ $categories = [
    ],
 ];
 
-$manifest_directory =  __DIR__ . "/../../../public" . '/storage/project/manifest/';
+$manifest_directory =  __DIR__ . "/../../../public" . '/storage/project/demo/';
 $scanned_directory = array_diff(scandir($manifest_directory), array('..', '.'));
-$projects = [];
-foreach($scanned_directory as $file){
-   $projects[] = explode(".json", $file)[0];
-};
 $articles = [];
-foreach($projects as $project){
-   $manifest = file_get_contents( $manifest_directory . $project . '.json' );
-   $articles[] = json_decode($manifest, true);
-}
 
+foreach($scanned_directory as $project){
+   $tmp_file = $manifest_directory . $project . '/___hiden___/manifest.json';
+   if( file_exists($tmp_file) ){
+      $manifest = file_get_contents( $tmp_file );
+      $articles[] = json_decode($manifest, true);
+   }
+}
 ?>
+
 
 <?php $id_modal_hide = $id_modal = 0; ?>
 <section class="mh-portfolio" id="mh-portfolio">
