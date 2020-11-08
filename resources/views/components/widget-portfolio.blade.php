@@ -1,4 +1,4 @@
-<?php
+@php
 $categories = [
    [
       "name" => "Website",
@@ -29,10 +29,10 @@ foreach($scanned_directory as $project){
       $articles[] = json_decode($manifest, true);
    }
 }
-?>
 
+$id_modal_hide = $id_modal = 0;
+@endphp
 
-<?php $id_modal_hide = $id_modal = 0; ?>
 <section class="mh-portfolio" id="mh-portfolio">
    <div class="container">
       <div class="row section-separator">
@@ -108,8 +108,8 @@ foreach($scanned_directory as $project){
          </div>
       </div>
    </div>
-   <?php
+   @php
    $id_modal_hide++;
-   ?>
+   @endphp
    @endforeach
 </section>
