@@ -1,8 +1,5 @@
 <?php
 
-use Illuminate\Support\Facades\Mail;
-use App\Mail\ClientMail;
-
 function return_path($path){
     $new = "";
     $count = count(explode("/", $path))-1;
@@ -14,22 +11,8 @@ function return_path($path){
 
 function send_email($object){
 
-    $object = [
-        "name" => "Agostinho Ramos",
-        "message" => "This is it!!!!",
-        "email" => "agostinhopina095@gmail.com",
-    ];
-
-    // $html_message = new ClientMail([
-    //     "name" => $object["name"],
-    //     "message" => $object["message"],
-    //     "email" => $object["email"]
-    // ]);
-
-    $html_message = "Tigfnsdff sgiufdsg fdsgdfjsg ";
-
     $to = 'agostinhopina095@gmail.com';
-    $subject = 'Hello world!!!';
+    $subject = $object["name"] . ' sent you a message';
     $from = 'general@agostinhopinaramos.com';
 
     // To send HTML mail, the Content-type header must be set
@@ -42,12 +25,15 @@ function send_email($object){
     'X-Mailer: PHP/' . phpversion();
 
     // Compose a simple HTML email message
-    $message = $html_message;
+    $message = '<html><body>';
+    $message .= '<h3>Dear, Agostinho Ramos</h3>';
+    $message .= '<p>I am '. $object["name"]. ',<br/><br/> ' . $object["message"] . '<br/><br/><i>' . $object["mail"] . '<i></p>';
+    $message .= '</body></html>';
 
     // Sending email
     if (mail($to, $subject, $message, $headers)) {
         return True;
-    } 
+    }
     
     return False;
 }
