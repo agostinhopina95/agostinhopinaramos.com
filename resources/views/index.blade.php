@@ -167,5 +167,5 @@ $obj = [
 
 <x-Footer>
 <link rel='stylesheet' href="@php echo return_path(Request::path()) . '/css/style-index.min.css'; @endphp" type='text/css' />
-<script type="text/javascript" src="@php echo return_path(Request::path()) . '/js/bundle-index.min.js?v=2'; @endphp" ></script>
+<script type="text/javascript" src="@php echo return_path(Request::path()) . '/js/bundle-index.min.js'; @endphp" ></script>
 </x-Footer>
