@@ -128,7 +128,7 @@ gulp.task("unify-js", function (done) {
             "./resources/assets/js/custom-scripts.js",
         ])
         .pipe(concat("bundle.js"))
-        //.pipe(uglify())
+        .pipe(uglify())
         .pipe(rename({
             suffix: "-index.min"
         }))

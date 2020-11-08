@@ -364,7 +364,6 @@
       $("#contactForm").validator().on("submit", function (event) {
           if (event.isDefaultPrevented()) {
             // handle the invalid form...
-            formError();
             submitMSG(false);
           } else {
             // everything looks good!
@@ -387,21 +386,17 @@
                   if (text == "success"){
                       formSuccess();
                     } else {
-                      formError();
                       submitMSG(false);
                     }
               }
           });
         }
+
         function formSuccess(){
             $("#contactForm")[0].reset();
             submitMSG(true)
         }
-    	  function formError(){   
-    	    $("#contactForm").removeClass().addClass('shake animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-    	        $(this).removeClass();
-    	    });
-    	  }
+        
         function submitMSG(valid){
             if(valid){
               toastr["success"]("Your message has been sent!", "Form submit");

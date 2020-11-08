@@ -31,9 +31,11 @@ function send_email($object){
     $message .= '</body></html>';
 
     // Sending email
-    if (mail($to, $subject, $message, $headers)) {
-        return True;
-    } 
-    
-    return False;
+    try {
+        mail($to, $subject, $message, $headers);
+        return true;
+    } catch (Exception $e) {
+        return False;
+    }
+
 }
