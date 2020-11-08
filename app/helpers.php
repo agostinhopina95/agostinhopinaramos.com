@@ -11,12 +11,6 @@ function return_path($path){
 
 function send_email($object){
 
-    // $object = [
-    //     "name" => "Agostinho Ramos",
-    //     "message" => "This is it!!!!",
-    //     "email" => "agostinhopina095@gmail.com",
-    // ];
-
     $to = 'agostinhopina095@gmail.com';
     $subject = 'Hello world!!!';
     $from = 'general@agostinhopinaramos.com';
@@ -33,7 +27,7 @@ function send_email($object){
     // Compose a simple HTML email message
     $message = '<html><body>';
     $message .= '<h3>Dear, Agostinho Ramos</h3>';
-    $message .= '<p>I am ' . $object["name"] . ',<br/><br/> ' . $object["message"] . '<br/><br/><i>' . $object["mail"] . '</i></p>';
+    $message .= '<p>I am '. $object["name"]. ',<br/><br/> ' . $object["message"] . '<br/><br/><i>' . $object["email"] . '</i></p>';
     $message .= '</body></html>';
 
     // Sending email
