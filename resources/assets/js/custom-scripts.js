@@ -365,7 +365,7 @@
           if (event.isDefaultPrevented()) {
             // handle the invalid form...
             formError();
-            submitMSG(false, "Did you fill in the form properly?");
+            submitMSG(false);
           } else {
             // everything looks good!
             event.preventDefault();
@@ -388,26 +388,42 @@
                       formSuccess();
                     } else {
                       formError();
-                      submitMSG(false,text);
+                      submitMSG(false);
                     }
                 }
           });
         }
         function formSuccess(){
             $("#contactForm")[0].reset();
-            submitMSG(true, "Message Sent!")
+            submitMSG(true)
         }
     	  function formError(){   
     	    $("#contactForm").removeClass().addClass('shake animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
     	        $(this).removeClass();
     	    });
     	  }
-        function submitMSG(valid, msg){
+        function submitMSG(valid){
           if(valid){
-            var msgClasses = "h3 text-center fadeInUp animated text-success";
+            toastr["success"]("Your message has been sent!", "Form submit");
           } else {
-            var msgClasses = "h3 text-center shake animated text-danger";
+            toastr["error"]("Did you fill in the form properly?", "Form submit");
           }
-          $("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
+          toastr.options = {
+              "closeButton": false,
+              "debug": false,
+              "newestOnTop": false,
+              "progressBar": false,
+              "positionClass": "toast-top-right",
+              "preventDuplicates": false,
+              "onclick": null,
+              "showDuration": "300",
+              "hideDuration": "1000",
+              "timeOut": "5000",
+              "extendedTimeOut": "1000",
+              "showEasing": "swing",
+              "hideEasing": "linear",
+              "showMethod": "fadeIn",
+              "hideMethod": "fadeOut"
+          }
         }
 }(jQuery));

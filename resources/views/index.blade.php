@@ -123,6 +123,9 @@ $obj = [
   gtag('js', new Date());
   gtag('config', 'G-DLK0YQS3WW');
 </script>
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
 </x-Header>
 
     <!-- Start Loader -->
