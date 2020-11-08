@@ -1,8 +1,5 @@
 <?php
 
-use Illuminate\Support\Facades\Mail;
-use App\Mail\ClientMail;
-
 function return_path($path){
     $new = "";
     $count = count(explode("/", $path))-1;
@@ -14,19 +11,11 @@ function return_path($path){
 
 function send_email($object){
 
-    $object = [
-        "name" => "Agostinho Ramos",
-        "message" => "This is it!!!!",
-        "email" => "agostinhopina095@gmail.com",
-    ];
-
-    $html_message = new ClientMail([
-        "name" => $object["name"],
-        "message" => $object["message"],
-        "email" => $object["email"]
-    ]);
-
-    Mail::to($object["email"])->send($html_message);
+    // $object = [
+    //     "name" => "Agostinho Ramos",
+    //     "message" => "This is it!!!!",
+    //     "email" => "agostinhopina095@gmail.com",
+    // ];
 
     $to = 'agostinhopina095@gmail.com';
     $subject = 'Hello world!!!';
