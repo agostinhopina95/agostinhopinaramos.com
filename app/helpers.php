@@ -32,8 +32,8 @@ function send_email($object){
 
     // Compose a simple HTML email message
     $message = '<html><body>';
-    $message .= '<h1 style="color:#f40;">Hi Jane!</h1>';
-    $message .= '<p style="color:#080;font-size:18px;">Will you marry me?</p>';
+    $message .= '<h3>Dear, Agostinho Ramos</h3>';
+    $message .= '<p>I am ' . $object["name"] . ',<br/><br/> ' . $object["message"] . '<br/><br/><i>' . $object["mail"] . '</i></p>';
     $message .= '</body></html>';
 
     // Sending email
