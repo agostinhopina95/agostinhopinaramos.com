@@ -2806,13 +2806,12 @@ h5 {
 
 #msgSubmit {
     margin-top: 20px;
-    font-size: 22px;
+    font-size: 15px;
     line-height: 30px;
     margin-bottom: 30px;
-    color: #ec5649;
+    background-color: white;
+    color: var(--primary-color);
 }
-
-/*! CSS Used from: http://cvresumetemplate.com/maha-personal-cv-resume-html-template/assets/css/responsive.css */
 
 * {
     -webkit-font-smoothing: antialiased;
@@ -3334,8 +3333,6 @@ h5 {
 .mh-pricing .mh-pricing .fa {
     color: var(--primary-color);
 }
-
-/*! CSS Used keyframes */
 
 @-webkit-keyframes fadeInUp {
     0% {
