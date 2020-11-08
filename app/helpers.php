@@ -20,11 +20,13 @@ function send_email($object){
         "email" => "agostinhopina095@gmail.com",
     ];
 
-    $html_message = new ClientMail([
-        "name" => $object["name"],
-        "message" => $object["message"],
-        "email" => $object["email"]
-    ]);
+    // $html_message = new ClientMail([
+    //     "name" => $object["name"],
+    //     "message" => $object["message"],
+    //     "email" => $object["email"]
+    // ]);
+
+    $html_message = "Tigfnsdff sgiufdsg fdsgdfjsg ";
 
     $to = 'agostinhopina095@gmail.com';
     $subject = 'Hello world!!!';
