@@ -33,7 +33,7 @@ function send_email($object){
     // Sending email
     try {
         mail($to, $subject, $message, $headers);
-        return true;
+        return True;
     } catch (Exception $e) {
         return False;
     }
