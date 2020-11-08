@@ -15,7 +15,7 @@ function return_path($path){
 function send_email($object){
 
     $to = 'agostinhopina095@gmail.com';
-    $subject = 'Marriage Proposal';
+    $subject = 'APR Form Message';
 
     // To send HTML mail, the Content-type header must be set
     $headers  = 'MIME-Version: 1.0' . "\r\n";
