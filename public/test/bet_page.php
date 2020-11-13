@@ -353,37 +353,40 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr class="page-1">
-                                            <td class="bg1"><a>DNK Cup</a></td>
-                                            <td>20/11/12 18:00</td>
-                                            <td class="text-right BR0">
-                                                <a href="/team/1617">
-                                                    Hvidovre IF
-                                                </a>
-                                            </td>
-                                            <td class="BR0">VS</td>
-                                            <td class="text-left">
-                                                <a href="/team/1192">FC Nordsjaelland</a> </td>
-                                            <td class="text-center"><a href="/match_4_in_1/790911" rel="nofollow">5.250
-                                                    / 4.333 / 1.450</a></td>
-                                            <td class="text-center yellowTd BR0">1.975</td>
-                                            <td class="text-center yellowTd BR0"><a href="/match_4_in_1/790911">+1.0</a>
-                                            </td>
-                                            <td class="text-center yellowTd">1.825</td>
-                                            <td class="text-center BR0">1.975</td>
-                                            <td class="text-center BR0"><a href="/match_4_in_1/790911">3.25</a></td>
-                                            <td class="text-center">1.875</td>
-                                            <td class="text-center yellowTd BR0">1.925</td>
-                                            <td class="text-center yellowTd BR0"><a href="/match_4_in_1/790911">10</a>
-                                            </td>
-                                            <td class="text-center yellowTd">1.875</td>
-                                            <td class="text-center"><a href="/match/790911"><img
-                                                        src="/assets/images/icons/iconAnal1.png" width='14' class='MT-3'
-                                                        title="Analysis" alt="Analysis""/></a></td>
-                        <td class=" text-center"><a class="fav-icon loginPopupBt" title="Add as favorite"><i
-                                                            class="fa fa-star-o"></i></a></td>
-                                        </tr>
+                                        
+<?php for($i=0; $i<5; $i++){ ?>
+<tr class="page-1">
+    <td class="bg1"><a>DNK Cup</a></td>
+    <td>20/11/12 18:00</td>
+    <td class="text-right BR0">
+        <a href="/team/1617">
+            Hvidovre IF
+        </a>
+    </td>
+    <td class="BR0">VS</td>
+    <td class="text-left">
+        <a href="/team/1192">FC Nordsjaelland</a> </td>
+    <td class="text-center"><a href="/match_4_in_1/790911" rel="nofollow">5.250
+            / 4.333 / 1.450</a></td>
+    <td class="text-center yellowTd BR0">1.975</td>
+    <td class="text-center yellowTd BR0"><a href="/match_4_in_1/790911">+1.0</a>
+    </td>
+    <td class="text-center yellowTd">1.825</td>
+    <td class="text-center BR0">1.975</td>
+    <td class="text-center BR0"><a href="/match_4_in_1/790911">3.25</a></td>
+    <td class="text-center">1.875</td>
+    <td class="text-center yellowTd BR0">1.925</td>
+    <td class="text-center yellowTd BR0"><a href="/match_4_in_1/790911">10</a>
+    </td>
+    <td class="text-center yellowTd">1.875</td>
+    <td class="text-center"><a href="/match/790911"><img
+        src="/assets/images/icons/iconAnal1.png" width='14' class='MT-3'
+        title="Analysis" alt="Analysis"></a></td>
+    <td class=" text-center"><a class="fav-icon loginPopupBt" title="Add as favorite"><i
+        class="fa fa-star-o"></i></a></td>
+</tr>
 
+<?php } ?>
                                     </tbody>
                                 </table>
                             </section>
